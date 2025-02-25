@@ -1,0 +1,89 @@
+/*! 
+ * Styling for the navbar
+ */
+
+ #mainNav {
+  background-color: $gray-100;
+
+  .navbar-toggler {
+    font-size: 12px;
+    padding: 12px 16px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: $primary;
+    @include heading-font;
+  }
+
+  .navbar-brand {
+    color: $primary;
+    @include script-font;
+
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($primary, 10%);
+    }
+
+    > img {
+      height: 60px;
+      max-width: 100%;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 1em 1.5em;
+        color: #000;
+        letter-spacing: 0.5px;
+        @include heading-font;
+
+        &.active,
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    .navbar-brand {
+      font-size: 2em;
+      transition: all 0.3s;
+      padding: 8px 0;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 1em 1em;
+        }
+      }
+    }
+
+    &.navbar-shrink {
+      background-color: #fff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      .navbar-brand {
+        font-size: 1.75em;
+        padding: 6px 0;
+      }
+
+      .navbar-brand > img {
+        height: 45px;
+      }
+    }
+  }
+}

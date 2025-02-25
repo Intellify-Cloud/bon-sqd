@@ -1,0 +1,45 @@
+<!-- Text-Block | WHY US-->
+<section class="bg-white page-section" id="{{ site.data.sitetext.textblock.section | default: " textblock" }}">
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase text-center">{{ site.data.sitetext.textblock.title | default: "Text
+          Text-Block" }}
+        </h2>
+        {% if site.data.sitetext.textblock.text %}
+        <h3 class="textblock-subheading text-muted text-center">{{ site.data.sitetext.textblock.text }}</h3>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1 text-center"></div>
+      <div class="col-lg-10 text-left">
+        <div class="container section-subheading">
+          {% for textblock in site.data.sitetext.textblock.list %}
+          <div class="row">
+            {% if textblock.image %}
+            <div class="textblock-image col-1 p-1 text-center">
+              <i class="fas {{textblock.image}} fa-2x"></i>
+            </div>
+            {% endif %}
+            <div class="textblock-title col align-items-center text-center">
+              {{ textblock.title }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <br>
+        {% if site.data.sitetext.textblock.footer %}
+        <div class="text-center w-100">
+          <strong>{{ site.data.sitetext.textblock.footer | markdownify }}</strong>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-lg-1 text-center"></div>
+  </div>
+</section>
+<!-- End Text-Block -->

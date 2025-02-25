@@ -1,0 +1,231 @@
+header:
+    title: 
+    text: Need a Homeloan
+
+expert:
+    title: "Get pre-approved for a home loan today"
+    text: "Whether you're looking to buy or ready to put in an offer, we recommend you get pre-approved. Reach out to one of our experts now."
+    button 1 text: "Do it Yourself"
+    button 2 text: "Speak to an Expert"
+
+services:
+    title: "Services We Offer"
+    text: "We get you the most competitive rate by sourcing quotes from the banks for you to compare."
+    section: services
+    list:
+      - title: "Bond Origination"
+        desc: "We submit Home Loan Applications to up to seven banks negotiating the best interest rates and deal in the market at any given time."
+        icon: fas fa-home
+        link: 
+          url: mailto:grant.butler@evogroup.co.za ; andy.breach@evogroup.co.za?subject=Mail from evo Copestone website
+          text: "Email Grant & Andy"
+      - title: "Pre-qualification"
+        desc: "I help you check your credit record, income and expenses to give you an accurate assessment of what you can afford. You will then know how likely you are to qualify for a bond."
+        icon: fas fa-tasks       
+        link:
+          url: tel:+27826035414
+          text: "Call: 082 603 5414"
+      - title: "Still Looking for a Home"
+        desc: "I am searching property portals and visiting show houses but have a few questions."
+        icon: fas fa-search
+        link: 
+          url: mailto:grant.butler@evogroup.co.za ; andy.breach@evogroup.co.za?subject=Mail from evo Copestone website
+          text: "Email Grant & Andy"
+
+
+articles:
+    title: "Articles"
+    text: "Here is a list of our articles that can help inform you about news in homeloans, interest rates and the South African property market."
+    section: articles
+
+calculators:
+    title: "Home Loan Calculators"
+    text: "Use our Home loan Calculators to work out the size of home loan you are likely to qualify for and what your bond repayments will be."
+    section: calculators
+    list:
+      - title: "Bond Calculator"
+        desc: "Calculate the home loan you qualify for."
+        icon: fas fa-calculator
+        link: 
+          url: /affordability-calculator
+          text: "Calculate"
+      - title: "Repayment Calculator"
+        desc: "Calculate your monthly bond repayments."
+        icon: fas fa-calculator   
+        link:
+          url: /bond-calculator
+          text: "Calculate"
+      - title: "Transfer Cost Calculator"
+        desc: "Calculate your registration and transfer costs."
+        icon: fas fa-calculator   
+        link:
+          url: /transfer-cost-calculator
+          text: "Calculate"
+
+
+more-calculators:
+    title: "More Calculators"
+    text: ""
+    section: more-calculators
+    list:
+      - title: "Deposit Savings Calculator"
+        desc: "Calculate how much you need to save for your deposit."
+        icon: fas fa-calculator   
+        link:
+          url: /deposit-savings-calculator
+          text: "Calculate"
+      - title: "Amortisation Calculator"
+        desc: "Calculate how your repayment is structured."
+        icon: fas fa-calculator   
+        link:
+          url: /amortisation-calculator
+          text: "Calculate"
+
+textblock:
+    title: "Why Evo Copestone"
+    text: ""
+    footer: "THERE IS NO CHARGE TO YOU, THE CLIENT, FOR OUR SERVICE."
+    section: textblock
+    list:
+      - title: "We will pre-qualify you prior to you starting your search for a home."
+        # image: "fas fa-check-square"
+      - title: "All applications are expertly prepared and submitted on your behalf, ensuring you a hassle-free process."
+        # image: "fas fa-check-square"
+      - title: "Our experienced Home Loans Consultants will liaise with all major and niche banks to ensure that we negotiate the best interest for you."
+        # image: "fas fa-check-square"
+      - title: "You are kept informed of the progress every step of the way."
+        # image: "fas fa-check-square"
+
+
+portfolio:
+    title: "Other Services"
+    text: "Some of our work"
+    section: portfolio
+    closebutton: "Close"
+    
+about:
+    title: "About Us"
+    text2: "EvoCopestone is the brainchild of Grant Butler, who after many years in the property and home loan
+            industry, sought a model that would both richly reward our consultants and at the same time provide a
+            service to our clients (Estate Agents, Buyers, Developers, Banks and Attorneys) that is seamless and
+            service “way above the rest”. 
+            
+            <br><br>
+            
+            Grant Butler has used his 30 years of home loan experience to create a phenomenal team of consultants
+            where World Class service is a minimum standard. The evo Copestone team excels at customer service, be it banks, agents, buyers or attorneys.
+            
+            <br><br>
+
+            Besides offering world-class service to all the stake holders (Estate Agents, Buyers, Developers, Banks and
+            Attorneys) in the home loan industry, EvoCopestone has a unique admin outsourcing model. We have
+            dedicated admin resources at our disposal who ensure that our applications are sent seamlessly to multiple banks thereby ensuring you the best possible deal.
+            
+            <br><br>
+            
+            EvoCopestone’ s seamless processing and exceptional service is free to you. Together with EvoCopestone, the dream of owning your own home becomes a reality.
+
+            <br><br>"
+    text3: "GETTING YOU A HOME LOAN IS NOT ONLY OUR PASSION....IT’S OUR OBSESSION!"
+    
+clients:
+    title: Bank Partners
+    section: clients
+    max-height: 120px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "ABSA"
+        url: https://www.absa.co.za
+        logo: assets/img/clients/absa-bw.png
+      - title: "FNB"
+        url: https://www.fnb.co.za/
+        logo: assets/img/clients/fnb-n.png
+      - title: "Investec"
+        url: https://www.investec.co.za/
+        logo: assets/img/clients/investec.png
+      - title: "Ithala Bank"
+        url: https://www.ithala.co.za/
+        logo: assets/img/clients/ithala-bank.png
+      - title: "Rand Merchant Bank"
+        url: https://www.rmb.co.za
+        logo: assets/img/clients/rmb-img-n.png
+      - title: "Sentinal Homes"
+        url: https://www.sentinelhomes.co.za/
+        logo: assets/img/clients/sentinal-homes.png
+      - title: "Nedbank"
+        url: https://www.nedbank.co.za
+        logo: assets/img/clients/nedbank-bw.png
+      - title: "Standard Bank"
+        url: https://www.standardbank.co.za/
+        logo: assets/img/clients/SBSA-bw.png
+    
+team:
+    title: "THE TEAM"
+    # text: "Lorem ipsum dolor sit amet consectetur."
+    # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    contact: 
+    people:
+      - name: "Grant Butler"
+        role: "Managing Director"
+        image: assets/img/team/Grant-Butler-evo-Copestone.jpg
+        social:
+          - url: tel:082 603 5414
+            icon: fas fa-phone
+          - url: mailto:grant.butler@evogroup.co.za?subject=evo Copestone Website Enquiry
+            icon: fas fa-envelope
+          # - url: https://www.facebook.com/xxx
+          #   icon: fab fa-facebook-f
+          # - url: https://www.linkedin.com/in/bondapply
+          #   icon: fab fa-linkedin-in
+
+      - name: "Andy Breach"
+        role: "Operations Director"
+        image: assets/img/team/Andy-Breach-evo-Copestone.jpg
+        social:
+          - url: tel:083 968 8712
+            icon: fas fa-phone
+          - url: mailto:andy.breach@evogroup.co.za?subject=evo Copestone Website Enquiry
+            icon: fas fa-envelope
+          # - url: https://www.facebook.com/xxx
+          #   icon: fab fa-facebook-f
+          # - url: https://www.linkedin.com/in/bondapply
+          #   icon: fab fa-linkedin-in
+
+testimonials:
+    title: "TESTIMONIALS"
+    text: "What Others Say About Me"
+    section: testimonials
+    people:
+      - name: "Anon D. ☆☆☆☆☆"
+        testimony: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+
+      - name: "Unknown M. ☆☆☆☆☆"
+        testimony: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+
+      - name: "Psuedo V.☆☆☆☆☆"
+        testimony: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+
+        
+
+contact:
+    title: "Contact Us"
+    text: ""
+    section: team
+    
+footer:
+    legal: "Powered by evo Home Loans"
+    social:
+      # - url: https://twitter.com
+      #   icon: "fab fa-twitter"  
+      - url: https://www.facebook.com/EvoCopestone/
+        icon: "fab fa-facebook-f"
+      # - url: https://linkedin.com
+      #   icon: "fab fa-linkedin-in"
+      # - url: https://github.com/raviriley/agency-jekyll-theme
+      #   icon: "fab fa-github"
+      # - url: https://instagram.com
+      #   icon: "fab fa-instagram"
+
+
+# {{ site.data.sitetext.ex.ex | markdownify | default: example }}

@@ -1,0 +1,28 @@
+<!-- Testimonials -->
+<section class="page-section" id="{{ site.data.sitetext.testimonials.section | default: "testimonials" }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.testimonials.title }}</h2>
+          
+          
+         <h3 class="textblock-subheading text-muted"><a class="badge badge-pill g "" }}"> {{ site.data.sitetext.testimonials.text | default: "" }}</a></h3>
+        
+        </div>
+      </div>
+      <div class="row">
+      {% for person in site.data.sitetext.testimonials.people %}
+        <div class="col-lg-4">
+          <div class="team-member">
+            <!-- <img class="mx-auto rounded-circle" src="{{ person.image }}" alt=""> -->
+            <p class="text-muted font-italic">{{ person.testimony }}</p>
+            <h5>{{ person.name }}</h5>
+
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+
+    </div>
+    </section>
+    <!-- End Team -->

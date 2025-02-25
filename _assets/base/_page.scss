@@ -1,0 +1,154 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+  background-color: #fbf9f6;
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.618; // Golden ratio for readability
+}
+
+a {
+  color: $primary;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  @include heading-font;
+  line-height: 1.2;
+  margin-bottom: 0.618em; // Golden ratio spacing
+}
+
+// Responsive Section Padding with Golden Ratio
+.page-section {
+  padding: 5vw 8vw;
+
+  h2.section-heading {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 0.618em;
+  }
+
+  h3.section-subheading, h3.textblock-subheading {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 3em;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+
+// Responsive Padding
+@media (min-width: 768px) {
+  section {
+    padding: 6.18vw 0;
+  }
+}
+
+// Highlight color customization
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+// Responsive Iframe Styling
+// ----- Bond - Repayment Calc -------
+.bond-calc {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .bond-calc {
+    min-height: 120vh; /* Set min-height to 115vh for mobile */
+  }
+}
+
+@media (max-width: 440px) {
+  .bond-calc {
+    min-height: 150vh; 
+  }
+}
+//  End Bond Repayment Calc -------
+
+// Bond and Transfer Costs Calculator
+.transfer-calc {
+  width: 100%;
+  height: auto;
+  min-height: 190vh;
+}
+
+@media (max-width: 768px) {
+  .transfer-calc {
+    min-height: 270vh; 
+  }
+}
+
+@media (max-width: 440px) {
+  .transfer-calc {
+    min-height: 270vh; 
+  }
+}
+
+// --------Home Loan Amortisation Calculator-----------
+.amortisation-calc {
+  width: 100%;
+  height: auto;
+  min-height: 90vh;
+}
+@media (max-width: 768px) {
+  .amortisation-calc {
+    min-height: 120vh; 
+  }
+}
+@media (max-width: 440px) {
+  .amortisation-calc {
+    min-height: 150vh; 
+  }
+}
+// --------End Amortisation Calculator-----------
+
+.deposit-calc {
+  width: 100%;
+  height: auto;
+  min-height: 120vh;
+
+}
+@media (max-width: 768px) {
+  .deposit-calc {
+    min-height: 130vh; /* Set min-height to 115vh for mobile */
+  }
+}
+@media (max-width: 440px) {
+  .deposit-calc {
+    min-height: 175vh; 
+  }
+}
+
+.afford-calc {
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+  max-height: unset; /* Unset the max-height */
+}
+
+@media (max-width: 768px) {
+  .afford-calc {
+    min-height: 115vh; /* Set min-height to 115vh for mobile */
+  }
+}

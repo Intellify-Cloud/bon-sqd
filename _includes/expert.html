@@ -1,0 +1,29 @@
+<section class="expert page-section" id="expert">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-heading">
+                    <h2 class="section-heading text-uppercase">
+                        {{ site.data.sitetext.expert.title | default: "Text Text-Block" }}
+                    </h2>
+                    <p class="section-heading">{{ site.data.sitetext.expert.text }}</p>
+                  </div>
+                
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- <div class="col-md-6 text-center">
+                    <a class="btn btn-primary btn-xl text-uppercase shadow" href="https://prequalify.evocopestone.co.za/"
+                    target="_blank">
+                    {{ site.data.sitetext.expert["button 1 text"] | default: "Do it Yourself" }}
+                </a>
+            </div> -->
+
+            <div class="col-md-12 text-center">
+                <a class="btn btn-outline-primary btn-xl text-uppercase shadow"
+                    href="#team">{{ site.data.sitetext.expert["button 2 text"] | default: "Speak to an Expert" }}</a>
+            </div>
+        </div>
+    </div>
+  </section>
+  
