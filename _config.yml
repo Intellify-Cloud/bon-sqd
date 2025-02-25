@@ -1,8 +1,8 @@
 baseurl: ""
 
-title      : evo Copestone - Bond Origination & Home Loans Expert in Cape Town
-email      : grant.butler@evogroup.co.za
-description: Contact Grant Butler from evo Copestone to help you with your home loan. We are seasoned property professionals and specialize in mortgages and property finance with years of experience. Our experience ranges from sales to finance and out focus is bonds, homeloans and origination. evo Copestone is committed to excellent client service, building long-term relationships.
+title      : Bond Squad - Bond Origination & Home Loans Expert in Cape Town and Durban
+email      : bond.squad@evogroup.co.za
+description: Achieve your property dreams with Bond Squad. Founded by Hayley Craig and Lara Patterson, we secure the best home loan deals through expert bond origination.
 author     : Eben Roux / Pieter Oosthuizen
 
 analytics:
@@ -20,14 +20,15 @@ webserver_headers:
     - GET, OPTIONS, HEAD
 
 logo:
-  path: /assets/evo copestone logo.png
+  path: /assets/bond-squad-logo.png
 
 exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
 
 group: evo Home Loans
 
-company: evo Copestone 
+company: Bond Squad 
 
-url: https://evohomeloans.co.za/bond-originator/cape-town/evo-copestone/ 
+url: https://evohomeloans.co.za/
 
-address: 75 Starfish, Ocean Tides Residential Estate, Big Bay, Cape Town, 7441
+address: KwaZulu-Natal: Morningside, Durban, 4001 | Western Cape: Three Anchor Bay, Cape Town, 8005
+

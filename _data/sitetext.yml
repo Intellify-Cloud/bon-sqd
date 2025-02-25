@@ -10,32 +10,32 @@ expert:
 
 services:
     title: "Services We Offer"
-    text: "We get you the most competitive rate by sourcing quotes from the banks for you to compare."
+    text: "We get you the best deal on your Home Loan by sourcing quotes from all the leading banks (including your own bank) for you to compare."
     section: services
     list:
-      - title: "Bond Origination"
-        desc: "We submit Home Loan Applications to up to seven banks negotiating the best interest rates and deal in the market at any given time."
-        icon: fas fa-home
-        link: 
-          url: mailto:grant.butler@evogroup.co.za ; andy.breach@evogroup.co.za?subject=Mail from evo Copestone website
-          text: "Email Grant & Andy"
       - title: "Pre-qualification"
-        desc: "I help you check your credit record, income and expenses to give you an accurate assessment of what you can afford. You will then know how likely you are to qualify for a bond."
-        icon: fas fa-tasks       
+        desc: "Contact us before you start looking at properties. With our streamlined pre-approval process, we will give you advice around your qualifying and affordability range, as well as on improving your credit and affordability profiles."
+        icon: fas fa-tasks
+        link: 
+          url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from evo Copestone website
+          text: "Email Lara & Hayley"
+      - title: "Bond Origination"
+        desc: "We work hard on negotiating the best possible terms and interest rates for all our clients. Complete our easy Home Loan application form, and we will ensure that all your documentation is correct to be submitted to all the banks. We liaise with all the major banks (including your own bank) to guarantee you the best interest rates and deal on your Home Loan. "
+        icon: fas fas fa-home     
         link:
           url: tel:+27826035414
           text: "Call: 082 603 5414"
-      - title: "Still Looking for a Home"
-        desc: "I am searching property portals and visiting show houses but have a few questions."
-        icon: fas fa-search
+      - title: "Insurance"
+        desc: "We offer competitive insurance products including Building Insurance and Mortgage Protection, bringing all your home loan options under one roof."
+        icon: fas fa-shield
         link: 
-          url: mailto:grant.butler@evogroup.co.za ; andy.breach@evogroup.co.za?subject=Mail from evo Copestone website
-          text: "Email Grant & Andy"
+          url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from evo Copestone website
+          text: "Email Lara & Hayley"
 
 
 articles:
     title: "Articles"
-    text: "Here is a list of our articles that can help inform you about news in homeloans, interest rates and the South African property market."
+    text: ""
     section: articles
 
 calculators:
@@ -105,28 +105,16 @@ portfolio:
     
 about:
     title: "About Us"
-    text2: "EvoCopestone is the brainchild of Grant Butler, who after many years in the property and home loan
-            industry, sought a model that would both richly reward our consultants and at the same time provide a
-            service to our clients (Estate Agents, Buyers, Developers, Banks and Attorneys) that is seamless and
-            service “way above the rest”. 
-            
-            <br><br>
-            
-            Grant Butler has used his 30 years of home loan experience to create a phenomenal team of consultants
-            where World Class service is a minimum standard. The evo Copestone team excels at customer service, be it banks, agents, buyers or attorneys.
-            
-            <br><br>
+    text2: "Founded with a vision to make homeownership and property investment easier for everyone, Bond Squad is rooted in the commitment to personalised service. Whether you’re a first-time buyer or a seasoned property investor, or any stakeholder in the Home Loan industry, our dedication to client service sets us apart from other bond originators. 
+      <br><br>
+      Powerhouse Bond Squad founders, Hayley Craig and Lara Patterson, have joined forces to ensure our clients a guaranteed path to securing property finance at the best possible rate. 
+      <br><br>
+      Hayley is a highly successful real estate agent with an impressive career spanning over 10 years in both Residential and Commercial property sales, and Lara boasts 30 years plus in Senior Marketing and Finance roles, resulting in superior business expertise, professionalism and client service for our clients. 
+      <br><br>
+      Together with our dedicated administrative resources, we are passionate about providing personalised services, navigating the complexities of bond origination and securing the best deal for our clients."
 
-            Besides offering world-class service to all the stake holders (Estate Agents, Buyers, Developers, Banks and
-            Attorneys) in the home loan industry, EvoCopestone has a unique admin outsourcing model. We have
-            dedicated admin resources at our disposal who ensure that our applications are sent seamlessly to multiple banks thereby ensuring you the best possible deal.
-            
-            <br><br>
-            
-            EvoCopestone’ s seamless processing and exceptional service is free to you. Together with EvoCopestone, the dream of owning your own home becomes a reality.
 
-            <br><br>"
-    text3: "GETTING YOU A HOME LOAN IS NOT ONLY OUR PASSION....IT’S OUR OBSESSION!"
+    text3: "TAILORED-MADE SERVICE FOR YOUR HOME OWNERSHIP JOURNEY"
     
 clients:
     title: Bank Partners
@@ -146,6 +134,9 @@ clients:
       - title: "Ithala Bank"
         url: https://www.ithala.co.za/
         logo: assets/img/clients/ithala-bank.png
+      - title: "Housing Investment Partners"
+        url: https://www.hiphousing.co.za/
+        logo: assets/img/clients/hip.jpg
       - title: "Rand Merchant Bank"
         url: https://www.rmb.co.za
         logo: assets/img/clients/rmb-img-n.png
@@ -166,26 +157,26 @@ team:
     section: team
     contact: 
     people:
-      - name: "Grant Butler"
-        role: "Managing Director"
-        image: assets/img/team/Grant-Butler-evo-Copestone.jpg
+      - name: "Hayley Craig"
+        role: "Co-Owner | Bond Originator"
+        image: assets/img/team/Hayley Craig.png
         social:
-          - url: tel:082 603 5414
+          - url: tel:083 676 0912
             icon: fas fa-phone
-          - url: mailto:grant.butler@evogroup.co.za?subject=evo Copestone Website Enquiry
+          - url: mailto:hayley.craig@evogroup.co.za?subject=Bond Squad Website Enquiry
             icon: fas fa-envelope
           # - url: https://www.facebook.com/xxx
           #   icon: fab fa-facebook-f
           # - url: https://www.linkedin.com/in/bondapply
           #   icon: fab fa-linkedin-in
 
-      - name: "Andy Breach"
-        role: "Operations Director"
-        image: assets/img/team/Andy-Breach-evo-Copestone.jpg
+      - name: "Lara Patterson"
+        role: "Co-Owner | Bond Originator"
+        image: assets/img/team/Lara Patterson.png
         social:
-          - url: tel:083 968 8712
+          - url: tel:083 275 2856
             icon: fas fa-phone
-          - url: mailto:andy.breach@evogroup.co.za?subject=evo Copestone Website Enquiry
+          - url: mailto:lara.patterson@evogroup.co.za?subject=Bond Squad Website Enquiry
             icon: fas fa-envelope
           # - url: https://www.facebook.com/xxx
           #   icon: fab fa-facebook-f
@@ -194,19 +185,12 @@ team:
 
 testimonials:
     title: "TESTIMONIALS"
-    text: "What Others Say About Me"
+    text: "What Others Say"
     section: testimonials
     people:
       - name: "Anon D. ☆☆☆☆☆"
         testimony: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-
-      - name: "Unknown M. ☆☆☆☆☆"
-        testimony: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
-
-      - name: "Psuedo V.☆☆☆☆☆"
-        testimony: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-
-        
+      
 
 contact:
     title: "Contact Us"
@@ -218,7 +202,7 @@ footer:
     social:
       # - url: https://twitter.com
       #   icon: "fab fa-twitter"  
-      - url: https://www.facebook.com/EvoCopestone/
+      - url: https://www.facebook.com/profile.php?id=61572800446272
         icon: "fab fa-facebook-f"
       # - url: https://linkedin.com
       #   icon: "fab fa-linkedin-in"
@@ -227,5 +211,3 @@ footer:
       # - url: https://instagram.com
       #   icon: "fab fa-instagram"
 
-
-# {{ site.data.sitetext.ex.ex | markdownify | default: example }}
