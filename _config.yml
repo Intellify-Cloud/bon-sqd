@@ -1,6 +1,6 @@
 baseurl: ""
 
-title      : Bond Squad - Bond Origination & Home Loans Expert in Cape Town and Durban
+title      : Bond Squad - Bond Origination & Home Loans Expert in Cape Town
 email      : bond.squad@evogroup.co.za
 description: Achieve your property dreams with Bond Squad. Founded by Hayley Craig and Lara Patterson, we secure the best home loan deals through expert bond origination.
 author     : Eben Roux / Pieter Oosthuizen
@@ -24,11 +24,11 @@ logo:
 
 exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
 
-group: evo Home Loans
+group: Bond Squad 
 
 company: Bond Squad 
 
-url: https://evohomeloans.co.za/
+url: https://evohomeloans.co.za
 
-address: KwaZulu-Natal: Morningside, Durban, 4001 | Western Cape: Three Anchor Bay, Cape Town, 8005
+address: KwaZulu-Natal Address, Morningside, Durban, 4001 | Western Cape Address, Three Anchor Bay, Cape Town, 8005
 

@@ -17,7 +17,7 @@ services:
         desc: "Contact us before you start looking at properties. With our streamlined pre-approval process, we will give you advice around your qualifying and affordability range, as well as on improving your credit and affordability profiles."
         icon: fas fa-tasks
         link: 
-          url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from evo Copestone website
+          url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from Bond Squad website
           text: "Email Lara & Hayley"
       - title: "Bond Origination"
         desc: "We work hard on negotiating the best possible terms and interest rates for all our clients. Complete our easy Home Loan application form, and we will ensure that all your documentation is correct to be submitted to all the banks. We liaise with all the major banks (including your own bank) to guarantee you the best interest rates and deal on your Home Loan. "
@@ -29,7 +29,7 @@ services:
         desc: "We offer competitive insurance products including Building Insurance and Mortgage Protection, bringing all your home loan options under one roof."
         icon: fas fa-shield
         link: 
-          url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from evo Copestone website
+          url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from Bond Squad website
           text: "Email Lara & Hayley"
 
 
@@ -82,7 +82,7 @@ more-calculators:
           text: "Calculate"
 
 textblock:
-    title: "Why Evo Copestone"
+    title: "Why Bond Squad"
     text: ""
     footer: "THERE IS NO CHARGE TO YOU, THE CLIENT, FOR OUR SERVICE."
     section: textblock
