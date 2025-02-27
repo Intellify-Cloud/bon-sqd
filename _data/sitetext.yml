@@ -65,7 +65,7 @@ calculators:
 
 more-calculators:
     title: "More Calculators"
-    text: "Lorem ipsum..."
+    text: ""
     section: more-calculators
     list:
       - title: "Deposit Savings Calculator"
