@@ -8,6 +8,7 @@ body {
 
 p {
   line-height: 1.618; // Golden ratio for readability
+  font-size: 19px;
 }
 
 a {
@@ -34,14 +35,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5vw 8vw;
 
   h2.section-heading {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(3rem, 4vw, 3rem);
     margin-bottom: 0.618em;
   }
 
   h3.section-subheading, h3.textblock-subheading {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 400;
-    font-style: italic;
+    //font-style: italic;
     margin-bottom: 3em;
     text-transform: none;
     @include serif-font;

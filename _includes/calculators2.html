@@ -1,33 +1,33 @@
 <!-- More Calculators -->
-<section class="page-section bg-light calculators py-5" id="{{ site.data.sitetext.more-calculators.section | default: "calculators" }}">
+<section class="calculators page-section py-5 bg-dark" id="{{ site.data.sitetext.more-calculators.section | default: 'calculators2' }}">
   <div class="container">
-    <div class="calculators__header text-center">
-      
-      <h2 class="calculators__title">{{ site.data.sitetext.more-calculators.title | default: "Services We Offer" }}</h2>
-      
-      {% if site.data.sitetext.more-calculators.text %}
-        <h3 class="text-muted">{{ site.data.sitetext.more-calculators.text }}</h3>
-      {% endif %}
-    </div>
-
-    <div class="calculators__grid">
-      {% for service in site.data.sitetext.more-calculators.list %}
-      <div class="calculators__card">
-        <div class="calculators__icon">
-          <i class="{{ service.icon | default: 'fas fa-shopping-cart' }}"></i>
-        </div>
-        <h4 class="calculators__card-title">{{ service.title | markdownify }}</h4>
-        {% if service.desc %}
-          <p class="calculators__desc">{{ service.desc | markdownify }}</p>
-        {% endif %}
-        {% if service.link %}
-        <div class="calculators__card-footer">
-          <a href="{{ service.link.url }}" class="calculators__button" role="button">
-            {{ service.link.text }}
-          </a>
-        </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.more-calculators.title | default: 'MORE CALCULATORS' }}</h2>
+        {% if site.data.sitetext.more-calculators.text %}
+          <h3 class="section-subheading text-muted">{{ site.data.sitetext.more-calculators.text }}</h3>
         {% endif %}
       </div>
+    </div>
+    
+    <div class="calculators-grid">
+      {% for service in site.data.sitetext.more-calculators.list %}
+        <div class="calculator-card">
+          <div class="calculators-icon">
+            <i class="{{ service.icon | default: 'fas fa-shopping-cart' }}"></i>
+          </div>
+          <h4 class="calculators-title">{{ service.title | markdownify }}</h4>
+          {% if service.desc %}
+            <p class="calculators-desc">{{ service.desc | markdownify }}</p>
+          {% endif %}
+          {% if service.link %}
+            <div class="calculators-footer">
+              <a href="{{ service.link.url }}" class="btn btn-outline-primary btn-xl text-uppercase shadow" role="button">
+                {{ service.link.text }}
+              </a>
+            </div>
+          {% endif %}
+        </div>
       {% endfor %}
     </div>
   </div>

@@ -1,31 +1,34 @@
 <!-- Team -->
-<section class="team-section" id="{{ site.data.sitetext.team.section | default: 'team' }}">
+<section class="bg-white page-section py-5" id="{{ site.data.sitetext.team.section | default: 'team' }}">
 	<div class="container">
-	  <h2 class="section-heading text-uppercase">{{ site.data.sitetext.team.title }}</h2>
-  
-	  <div class="team-container">
-		{% for person in site.data.sitetext.team.people %}
-		<div class="team-member">
-		  <img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
-		  <h4>{{ person.name }}</h4>
-		  <p class="text-muted">{{ person.role }}</p>
-		  <ul class="list-inline social-buttons">
-			{% for network in person.social %}
-			<li class="list-inline-item">
-			  <a href="{{ network.url }}" target="_blank">
-				<i class="{{ network.icon }}"></i>
-			  </a>
-			</li>
+	  <div class="row">
+		<div class="col-lg-12 text-center">
+		  <h2 class="section-heading text-uppercase">{{ site.data.sitetext.team.title }}</h2>
+		  <h3 class="section-subheading text-muted">{{ site.data.sitetext.team.text }}</h3>
+		  <div class="team-container">
+			{% for person in site.data.sitetext.team.people %}
+			<div class="team-member">
+			  <img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
+			  <h4>{{ person.name }}</h4>
+			  <p class="text-muted">{{ person.role }}</p>
+			  <ul class="list-inline social-buttons">
+				{% for network in person.social %}
+				<li class="list-inline-item">
+				  <a href="{{ network.url }}" target="_blank">
+					<i class="{{ network.icon }}"></i>
+				  </a>
+				</li>
+				{% endfor %}
+			  </ul>
+			</div>
 			{% endfor %}
-		  </ul>
+		  </div>
+		  
+		  <div class="text-center">
+			<div class="large text-muted">{{ site.data.sitetext.team.subtext | markdownify }}</div>
+		  </div>
 		</div>
-		{% endfor %}
-	  </div>
-  
-	  <div class="text-center">
-		<div class="large text-muted">{{ site.data.sitetext.team.subtext | markdownify }}</div>
 	  </div>
 	</div>
   </section>
   <!-- End Team -->
-  

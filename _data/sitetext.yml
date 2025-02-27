@@ -1,6 +1,6 @@
 header:
-    title: 
-    text: Need a Homeloan
+    title: ""
+    text: ""
 
 expert:
     title: "Get pre-approved for a home loan today"
@@ -27,7 +27,7 @@ services:
           text: "Call: 082 603 5414"
       - title: "Insurance"
         desc: "We offer competitive insurance products including Building Insurance and Mortgage Protection, bringing all your home loan options under one roof."
-        icon: fas fa-shield
+        icon: fas fa-shield-alt
         link: 
           url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from Bond Squad website
           text: "Email Lara & Hayley"
@@ -65,7 +65,7 @@ calculators:
 
 more-calculators:
     title: "More Calculators"
-    text: ""
+    text: "Lorem ipsum..."
     section: more-calculators
     list:
       - title: "Deposit Savings Calculator"
@@ -152,8 +152,8 @@ clients:
     
 team:
     title: "THE TEAM"
-    # text: "Lorem ipsum dolor sit amet consectetur."
-    # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    text: Lorem ipsum dolor sit amet consectetur
+    # subtext: Text Below the Images, also Markdown is suppoted **Bold Text Allowed**
     section: team
     contact: 
     people:

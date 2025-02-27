@@ -10,14 +10,14 @@ header.masthead {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 60vh;
   padding: 0 2rem;
 
   .intro-text {
-    max-width: 800px;
+    max-width: none;
     text-align: center;
     padding: 2rem;
-    backdrop-filter: blur(5px);
+    //backdrop-filter: blur(5px);
 
     .intro-lead-in {
       font-size: clamp(20px, 4vw, 36px);
@@ -44,7 +44,7 @@ header.masthead {
 // Responsive Tweaks
 @media (max-width: 768px) {
   header.masthead {
-    height: 70vh;
+    height: 50vh;
     .intro-text {
       padding: 1rem;
     }
