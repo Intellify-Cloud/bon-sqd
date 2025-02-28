@@ -1,18 +1,13 @@
-navnar.html
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#fff">
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/#">
       {%- if site.logo -%}
-      <img src="{{ site.baseurl }}{{ site.logo.path }}" alt="{{ site.title }}" />
+      <img src="{{ site.logo.path }}" alt="Logo">
       {%- else -%}
       {{ site.title }}
       {%- endif -%}
     </a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-      aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fas fa-bars"></i>
     </button>
@@ -23,33 +18,13 @@ navnar.html
           {%- if link.url -%}
           <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
           {%- else if link.section -%}
-          <a class="nav-link js-scroll-trigger" href="#{{ link.section }}">{{ link.title }}</a>
+          <a class="nav-link js-scroll-trigger" href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a>
           {%- else -%}
           <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
           {%- endif -%}
         </li>
         {% endfor %}
-        </li>
       </ul>
     </div>
   </div>
 </nav>
-<!-- End Navigation -->
-
-<!-- Header -->
-<header class="masthead">
-  <div class="container">
-    <div class="intro-text">
-      {%- if site.data.sitetext.header.title -%}
-      <div class="intro-lead-in">{{ site.data.sitetext.header.title | markdownify }}</div>
-      {%- endif -%}
-      {%- if site.data.sitetext.header.text -%}
-      <div class="intro-heading text-uppercase">{{ site.data.sitetext.header.text | markdownify }}</div>
-      {%- endif -%}
-      <!-- Contact Us Button -->
-      <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/contact">Contact Us</a>  -->
-      <!-- Contact Us Button End -->
-    </div>
-  </div>
-</header>
-<!-- End Header -->

@@ -1,6 +1,6 @@
 header:
-    title: ""
-    text: ""
+    title: "Welcome to Bond Squad"
+    text: "Home Finance Game Changers"
 
 expert:
     title: "Get pre-approved for a home loan today"
@@ -18,19 +18,19 @@ services:
         icon: fas fa-tasks
         link: 
           url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from Bond Squad website
-          text: "Email Lara & Hayley"
+          text: "Contact Bond Squad"
       - title: "Bond Origination"
         desc: "We work hard on negotiating the best possible terms and interest rates for all our clients. Complete our easy Home Loan application form, and we will ensure that all your documentation is correct to be submitted to all the banks. We liaise with all the major banks (including your own bank) to guarantee you the best interest rates and deal on your Home Loan. "
         icon: fas fas fa-home     
         link:
           url: tel:+27826035414
-          text: "Call: 082 603 5414"
+          text: "Call Bond Squad"
       - title: "Insurance"
         desc: "We offer competitive insurance products including Building Insurance and Mortgage Protection, bringing all your home loan options under one roof."
         icon: fas fa-shield-alt
         link: 
           url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from Bond Squad website
-          text: "Email Lara & Hayley"
+          text: "Contact Bond Squad"
 
 
 articles:
@@ -82,19 +82,33 @@ more-calculators:
           text: "Calculate"
 
 textblock:
-    title: "Why Bond Squad"
-    text: ""
-    footer: "THERE IS NO CHARGE TO YOU, THE CLIENT, FOR OUR SERVICE."
-    section: textblock
-    list:
-      - title: "We will pre-qualify you prior to you starting your search for a home."
-        # image: "fas fa-check-square"
-      - title: "All applications are expertly prepared and submitted on your behalf, ensuring you a hassle-free process."
-        # image: "fas fa-check-square"
-      - title: "Our experienced Home Loans Consultants will liaise with all major and niche banks to ensure that we negotiate the best interest for you."
-        # image: "fas fa-check-square"
-      - title: "You are kept informed of the progress every step of the way."
-        # image: "fas fa-check-square"
+  title: "Why Bond Squad?"
+  text: "If you're looking to make your dream of owning your own home a reality, you've come to the right place. We can help you with every step of your home ownership journey."
+  footer: "**OUR SERVICE IS FREE WITH NO OBLIGATION OR COST TO YOU!**"
+  section: textblock
+  list:
+    - title: "We will pre-qualify you prior to you starting your search for a home."
+      image: "fas fa-circle"
+    - title: "All applications are expertly prepared and submitted on your behalf, ensuring you a hassle-free process."
+      image: "fas fa-circle"
+    - title: "Our experienced Home Loans Consultants will liaise with all major and niche banks to ensure that we negotiate the best interest for you."
+      image: "fas fa-circle"
+    - title: "You are kept informed of the progress every step of the way."
+      image: "fas fa-circle"
+    - title: "We help you get pre-qualification upfront, before you start house-hunting. That way you will know your credit score and exactly what you can afford."
+      image: "fas fa-circle"
+    - title: "We remove all of the hassle of applying for a Home Loan by guiding you on the banks' requirements and helping you gather all the necessary documents."
+      image: "fas fa-circle"
+    - title: "We help structure a single application around your unique profile and circumstances, preparing the strongest possible application form."
+      image: "fas fa-circle"
+    - title: "We submit your application on your behalf to all the major banks, including your own bank, to get multiple competitive quotes."
+      image: "fas fa-circle"
+    - title: "We support you every step of the way by tracking your application on a daily basis and reporting back to you regularly."
+      image: "fas fa-circle"
+    - title: "We help you compare all the quotes to make sure you get the best terms on your Home Loan."
+      image: "fas fa-circle"
+    - title: "We negotiate the best interest rate possible for you, making the banks compete for your business."
+      image: "fas fa-circle"
 
 
 portfolio:
@@ -165,6 +179,9 @@ team:
             icon: fas fa-phone
           - url: mailto:hayley.craig@evogroup.co.za?subject=Bond Squad Website Enquiry
             icon: fas fa-envelope
+          - url: https://wa.me/+27836760912
+            icon: fab fa-whatsapp
+
           # - url: https://www.facebook.com/xxx
           #   icon: fab fa-facebook-f
           # - url: https://www.linkedin.com/in/bondapply
@@ -178,6 +195,8 @@ team:
             icon: fas fa-phone
           - url: mailto:lara.patterson@evogroup.co.za?subject=Bond Squad Website Enquiry
             icon: fas fa-envelope
+          - url: https://wa.me/+27832752856
+            icon: fab fa-whatsapp
           # - url: https://www.facebook.com/xxx
           #   icon: fab fa-facebook-f
           # - url: https://www.linkedin.com/in/bondapply

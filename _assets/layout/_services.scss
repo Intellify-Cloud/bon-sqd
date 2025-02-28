@@ -1,41 +1,61 @@
 // Styling for the services section
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; // Keeps spacing consistent
+  justify-content: space-between; // Maintain original layout for wider screens
+
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Example box shadow
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    color: $primary;
+
+    &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .card-footer {
+    border: none;
+    background: $white;
+  }
+
+  .btn {
+    border-radius: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: $primary; // Example hover color
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+
+  // Responsive behavior: Stack cards vertically when screen width is below 920px
+  @media (max-width: 920px) {
+    flex-direction: column; // Stack elements vertically
+    align-items: center; // Center align stacked cards
+
+    .card {
+      width: 100%; // Make each card take full width
+      max-width: 500px; // Optional: Prevent them from becoming too wide
+    }
+  }
+}
+
+// Styling for the service headings
 .service-heading {
   margin: 15px 0;
   font-size: 24px;
   font-weight: 600;
-}
-
-#services .card {
-  border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Example box shadow
-  border-radius: 10px;
-  transition: box-shadow 0.3s ease;
-  color: $primary;
-  &:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-}
-
-#services .card .card-footer {
-  border: none;
-  background: $white;
-}
-
-#services .btn {
-  border-radius: 30px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-
-  
-  &:hover {
-    background-color: $primary; // Example hover color
-    transform: translateY(-2px);
-  }
-
-  &:active {
-    transform: translateY(1px);
-  }
+  text-align: center; // Keeps heading centered
 }

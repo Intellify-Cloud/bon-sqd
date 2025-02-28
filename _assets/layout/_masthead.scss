@@ -1,52 +1,134 @@
-// Styling for the masthead
-header.masthead {
+// Styling for the Hero | Masthead
+header.hero {
   text-align: center;
-  color: $white;
+  color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("#{$header-image}");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-position: right center;
   background-size: cover;
+  background-attachment: fixed; // Optimized for large screens
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  height: 60vh;
-  padding: 0 2rem;
+  height: 80vh;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  margin-top: 70px; // Keeps consistent spacing
 
-  .intro-text {
-    max-width: none;
-    text-align: center;
-    padding: 2rem;
-    //backdrop-filter: blur(5px);
+  .container {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+    width: 100%;
+    z-index: 2;
+  }
 
-    .intro-lead-in {
-      font-size: clamp(20px, 4vw, 36px);
-      font-style: italic;
-      line-height: 1.4;
-      margin-bottom: 1rem;
-      color: rgba($white, 0.8);
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-      @include serif-font;
-    }
+  .intro-heading {
+    font-size: clamp(32px, 6vw, 64px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    @include heading-font;
+  }
 
-    .intro-heading {
-      font-size: clamp(32px, 6vw, 64px);
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 1.5rem;
-      color: $white;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-      @include heading-font;
+  .intro-lead-in {
+    font-size: clamp(20px, 4vw, 36px);
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: rgba(#fff, 0.8);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    @include serif-font;
+  }
+
+  .btn-xl {
+    padding: clamp(0.75rem, 2vw, 1.25rem) clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 700;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
   }
 }
 
-// Responsive Tweaks
+// Modern Navbar Styling
+nav {
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); // Softer shadow for modern look
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+// Responsive Tweaks - Standard Breakpoints
+@media (max-width: 1200px) {
+  header.hero {
+    height: 80vh;
+    .intro-heading {
+      font-size: clamp(28px, 5vw, 56px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  header.hero {
+    height: 60vh;
+    background-position: right center;
+    .container {
+      top: 70%;
+    }
+    .intro-heading {
+      font-size: clamp(24px, 5vw, 48px);
+      margin-bottom: 1rem;
+    }
+    .intro-lead-in {
+      font-size: clamp(18px, 3.5vw, 32px);
+    }
+  }
+}
+
 @media (max-width: 768px) {
-  header.masthead {
+  header.hero {
+    height: 60vh;
+    background-attachment: scroll; // Improves mobile performance
+    .container {
+      padding: 0 1rem;
+    }
+    .btn-xl {
+      padding: 0.6rem 1.2rem;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  header.hero {
     height: 50vh;
-    .intro-text {
-      padding: 1rem;
+    .container {
+      top: 70%;
+    }
+    .intro-heading {
+      font-size: clamp(20px, 5vw, 36px);
+      margin-bottom: 0.75rem;
+    }
+    .intro-lead-in {
+      font-size: clamp(16px, 3vw, 24px);
+      margin-bottom: 0.75rem;
+    }
+    .btn-xl {
+      padding: 0.5rem 1rem;
+      font-size: 18px;
     }
   }
 }

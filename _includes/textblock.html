@@ -1,8 +1,6 @@
 <!-- Text-Block | WHY US-->
-<section class="bg-white page-section py-5" id="{{ site.data.sitetext.textblock.section | default: " textblock" }}">
+<section class="bg-light page-section py-5" id="{{ site.data.sitetext.textblock.section | default: 'textblock' }}">
   <div class="container">
-
-
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading text-uppercase text-center">{{ site.data.sitetext.textblock.title | default: "Text
@@ -19,13 +17,13 @@
       <div class="col-lg-10 text-left">
         <div class="container section-subheading">
           {% for textblock in site.data.sitetext.textblock.list %}
-          <div class="row">
+          <div class="row align-items-center">
             {% if textblock.image %}
             <div class="textblock-image col-1 p-1 text-center">
-              <i class="fas {{textblock.image}} fa-2x"></i>
+              <i class="{{textblock.image}} fa-1x"></i>
             </div>
             {% endif %}
-            <div class="textblock-title col align-items-center text-center">
+            <div class="textblock-title col text-left">
               {{ textblock.title }}
             </div>
           </div>
@@ -38,8 +36,8 @@
         </div>
         {% endif %}
       </div>
+      <div class="col-lg-1 text-center"></div>
     </div>
-    <div class="col-lg-1 text-center"></div>
   </div>
 </section>
 <!-- End Text-Block -->

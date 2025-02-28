@@ -1,15 +1,36 @@
+
 // Styling for the services section
 .textblock-heading {
-    margin: 5px 0;
-    text-transform: none;
-    color: #01acc8;
+  margin: 5px 0;
+  text-transform: none;
+  color: #01acc8;
 }
 
 .textblock-image {
-  min-width: 50px;
+min-width: 30px; // Reduced from 50px to make bullets take less space
+font-size: 0.8em; // Make the icon/bullet smaller
+text-align: center; // Center the bullet in its column
+padding-top: 8px; // Align bullet vertically with the text
+color: #01acc8;
 }
 
 .textblock-title {
-  line-height: 2em;
-  padding: 8px;
+line-height: 1.6em; // Slightly reduced line height for tighter lists
+padding: 8px;
+text-align: left; // Explicitly set text to left-align
+}
+
+// Add this to ensure the list items themselves are also left-aligned
+.textblock-item {
+  display: flex;
+  align-items: center; // Center items vertically
+  text-align: left;
+  margin-bottom: 10px; // Add spacing between list items
+}
+
+// To ensure any container doesn't override the alignment
+.textblock-list {
+text-align: left;
+padding-left: 0; // Remove any default padding
+align-items: center;
 }

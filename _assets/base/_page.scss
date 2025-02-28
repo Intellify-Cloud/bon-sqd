@@ -1,35 +1,3 @@
-// Global styling for this template
-body {
-  overflow-x: hidden;
-  @include body-font;
-  background-color: #fbf9f6;
-  font-size: 1rem;
-}
-
-p {
-  line-height: 1.618; // Golden ratio for readability
-  font-size: 19px;
-}
-
-a {
-  color: $primary;
-  transition: color 0.3s ease-in-out;
-  &:hover {
-    color: darken($primary, 10%);
-  }
-}
-
-.text-primary {
-  color: $primary !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
-  @include heading-font;
-  line-height: 1.2;
-  margin-bottom: 0.618em; // Golden ratio spacing
-}
-
 // Responsive Section Padding with Golden Ratio
 .page-section {
   padding: 5vw 8vw;
@@ -151,5 +119,149 @@ img::selection {
 @media (max-width: 768px) {
   .afford-calc {
     min-height: 115vh; /* Set min-height to 115vh for mobile */
+  }
+}
+
+// Responsive Typography for Headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  @include heading-font;
+  line-height: 1.2;
+  margin-bottom: 0.618em; // Golden ratio spacing
+}
+
+// Base heading sizes for mobile first approach
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.65rem;
+  }
+  
+  h4 {
+    font-size: 1.35rem;
+  }
+  
+  h5 {
+    font-size: 1.15rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.65rem;
+  }
+  
+  h5 {
+    font-size: 1.35rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.75rem;
+  }
+  
+  h3 {
+    font-size: 2.25rem;
+  }
+  
+  h4 {
+    font-size: 1.75rem;
+  }
+  
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+
+// Update your specific section heading styles to use fluid typography 
+// with clamp() instead of the fixed size in .page-section
+.page-section {
+  padding: 5vw 8vw;
+
+  h2.section-heading {
+    font-size: clamp(1.75rem, 5vw, 2.75rem); // More responsive range
+    margin-bottom: 0.618em;
+  }
+
+  h3.section-subheading, h3.textblock-subheading {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 400;
+    margin-bottom: 3em;
+    text-transform: none;
+    @include serif-font;
   }
 }

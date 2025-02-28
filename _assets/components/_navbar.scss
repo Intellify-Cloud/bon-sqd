@@ -4,7 +4,7 @@
 
  #mainNav {
   background-color: $gray-100;
-  padding: 0.75rem 1rem;
+  padding: 0.2rem 1rem;
   transition: all 0.3s ease-in-out;
 
   .navbar-toggler {
@@ -39,7 +39,7 @@
     }
 
     > img {
-      height: 70px;
+      height: 90px;
       max-width: 100%;
     }
   }
@@ -53,7 +53,7 @@
       .nav-link {
         font-size: 16px;
         font-weight: bold;
-        padding: 0.75rem 1rem;
+        padding: 0.2rem 1rem;
         color: #000;
         letter-spacing: 0.5px;
         @include heading-font;
@@ -67,8 +67,8 @@
     }
   }
 
-  @media (min-width: 992px) {
-    padding: 1rem 2rem;
+  @media (min-width: 1200px) {
+    padding: .2rem 2rem;
     border: none;
     background-color: $gray-100;
 
@@ -79,12 +79,12 @@
     }
 
     .navbar-nav .nav-item .nav-link {
-      padding: 0.75rem 1rem;
+      padding: 0.2rem 1rem;
     }
 
     &.navbar-shrink {
       background-color: $gray-100;
-      padding: 0.5rem 1rem;
+      padding: 0.2rem 1rem;
 
       .navbar-brand {
         font-size: 1.5rem;
