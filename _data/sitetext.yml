@@ -165,8 +165,8 @@ clients:
         logo: assets/img/clients/SBSA-bw.png
     
 team:
-    title: "THE TEAM"
-    text: Lorem ipsum dolor sit amet consectetur
+    title: "Contact Us"
+    text: We would love to hear from you and assist you in your home buying journey.
     # subtext: Text Below the Images, also Markdown is suppoted **Bold Text Allowed**
     section: team
     contact: 

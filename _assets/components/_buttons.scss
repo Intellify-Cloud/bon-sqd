@@ -19,8 +19,8 @@
 }
 
 .btn-primary {
-  background-color: $primary;
-  color: $white;
+  background-color: #aaa;
+  color: $primary;
   
   &:hover {
     background-color: darken($primary, 10%);

@@ -1,19 +1,20 @@
 // Responsive Section Padding with Golden Ratio
 .page-section {
   padding: 5vw 8vw;
-
+  
   h2.section-heading {
     font-size: clamp(3rem, 4vw, 3rem);
     margin-bottom: 0.618em;
   }
 
+  
   h3.section-subheading, h3.textblock-subheading {
     font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 400;
     //font-style: italic;
     margin-bottom: 3em;
     text-transform: none;
-    @include serif-font;
+    font-family: 'Comfortaa', serif; // Direct replacement
   }
 }
 
@@ -26,7 +27,7 @@
 
 // Highlight color customization
 ::selection {
-  background: $primary;
+  background: #c6f7ff;
   text-shadow: none;
 }
 
@@ -125,7 +126,7 @@ img::selection {
 // Responsive Typography for Headings
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  @include heading-font;
+  font-family: 'Comfortaa', Arial, sans-serif; 
   line-height: 1.2;
   margin-bottom: 0.618em; // Golden ratio spacing
 }
@@ -250,7 +251,7 @@ h6 {
 // Update your specific section heading styles to use fluid typography 
 // with clamp() instead of the fixed size in .page-section
 .page-section {
-  padding: 5vw 8vw;
+  padding: 5vw 2vw;
 
   h2.section-heading {
     font-size: clamp(1.75rem, 5vw, 2.75rem); // More responsive range
@@ -262,6 +263,6 @@ h6 {
     font-weight: 400;
     margin-bottom: 3em;
     text-transform: none;
-    @include serif-font;
+    font-family: 'Comfortaa', cursive;
   }
 }

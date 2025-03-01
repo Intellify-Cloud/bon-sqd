@@ -3,13 +3,22 @@
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 
+// First import Bootstrap functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
 $header-image: "./img/bond-squad-hero.jpg";
 $contact-image: "./img/contact.png";
 
 $primary: #00ACC8;
 $white: rgb(255, 255, 255);
 $black: #000;
-$input-height:calc(#{$input-height-inner} + #{$input-height-border});
+
+// Calculate derived variables that use Bootstrap variables
+$input-height: calc(#{$input-height-inner} + #{$input-height-border});
+// Then import the rest of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 $spacer:1rem;
 $border-width:3px;
@@ -46,7 +55,6 @@ $enable-gradients:false;
 
 body {
     overflow-x: hidden;
-    //font-family: "Comfortaaab","Roboto Condensed",sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-family: 'Comfortaa', cursive;
     webkit-tap-highlight-color: $primary;
 }
