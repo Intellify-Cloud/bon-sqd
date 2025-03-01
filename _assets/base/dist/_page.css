@@ -76,6 +76,22 @@ img::selection {
     min-height: 150vh;
   }
 }
+.additional-payment-calc {
+  width: 100%;
+  height: auto;
+  min-height: 110vh;
+}
+
+@media (max-width: 768px) {
+  .additional-payment-calc {
+    min-height: 130vh;
+  }
+}
+@media (max-width: 450px) {
+  .additional-payment-calc {
+    min-height: 200vh;
+  }
+}
 .deposit-calc {
   width: 100%;
   height: auto;

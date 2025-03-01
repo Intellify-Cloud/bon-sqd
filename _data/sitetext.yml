@@ -80,6 +80,12 @@ more-calculators:
         link:
           url: /amortisation-calculator
           text: "Calculate"
+      - title: "Additional Payment Calculator"
+        desc: "Calculate your savings on your total home loan cost by paying a little extra into your bond."
+        icon: fas fa-calculator   
+        link:
+          url: /additional-payment-calculator
+          text: "Calculate"
 
 textblock:
   title: "Why Bond Squad?"

@@ -91,7 +91,24 @@ img::selection {
     min-height: 150vh; 
   }
 }
-// --------End Amortisation Calculator-----------
+
+// --------Additional Payment Calculator-----------
+.additional-payment-calc {
+  width: 100%;
+  height: auto;
+  min-height:110vh;
+}
+@media (max-width: 768px) {
+  .additional-payment-calc {
+    min-height: 130vh; 
+  }
+}
+@media (max-width: 450px) {
+  .additional-payment-calc {
+    min-height: 200vh; 
+  }
+}
+// --------Additional Payemtn Calculator-----------
 
 .deposit-calc {
   width: 100%;
