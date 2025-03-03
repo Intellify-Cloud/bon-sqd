@@ -6,7 +6,7 @@ background: white
 
 <div>
     <iframe class="deposit-calc" frameborder="0"
-        src="www.ooba.co.za/calculators/bond-and-transfer-costs-calculator?iframe=true&iftype=nobrand"
+        src="www.ooba.co.za/calculators/bond-and-transfer-costs-calculator?iframe=true&iftype=evogroup"
         title="Transfer Cost Calculator"></iframe>
 </div>
 
