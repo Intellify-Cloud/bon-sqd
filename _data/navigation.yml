@@ -1,5 +1,15 @@
 nav:
-  - title: ""
-    section: 
+  - title: "Why Us"
+    section: textblock
+  - title: "Services"
+    section: services
+  - title: "About"
+    section: about
+  - title: "Team"
+    section: team
+  - title: "Calculators"
+    section: calculators
+  - title: "Contact"
+    url: /contact
 
 

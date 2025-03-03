@@ -1,6 +1,6 @@
 header:
     title: "Welcome to Bond Squad"
-    text: "Coming Soon"
+    text: "Home Finance Game Changers"
 
 expert:
     title: "Get pre-approved for a home loan today"
@@ -17,19 +17,19 @@ services:
         desc: "Contact us before you start looking at properties. With our streamlined pre-approval process, we will give you advice around your qualifying and affordability range, as well as on improving your credit and affordability profiles."
         icon: fas fa-tasks
         link: 
-          url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from Bond Squad website
+          url: /contact
           text: "Contact Bond Squad"
       - title: "Bond Origination"
         desc: "We work hard on negotiating the best possible terms and interest rates for all our clients. Complete our easy Home Loan application form, and we will ensure that all your documentation is correct to be submitted to all the banks. We liaise with all the major banks (including your own bank) to guarantee you the best interest rates and deal on your Home Loan. "
         icon: fas fas fa-home     
         link:
-          url: tel:+27826035414
-          text: "Call Bond Squad"
+          url: /contact
+          text: "Contact Bond Squad"
       - title: "Insurance"
         desc: "We offer competitive insurance products including Building Insurance and Mortgage Protection, bringing all your home loan options under one roof."
         icon: fas fa-shield-alt
         link: 
-          url: mailto:hayley.craig@evogroup.co.za ; lara.patterson@evogroup.co.za?subject=Mail from Bond Squad website
+          url: /contact
           text: "Contact Bond Squad"
 
 
@@ -97,11 +97,11 @@ textblock:
       image: "fas fa-circle"
     - title: "All applications are expertly prepared and submitted on your behalf, ensuring you a hassle-free process."
       image: "fas fa-circle"
-    - title: "Our experienced Home Loans Consultants will liaise with all major and niche banks to ensure that we negotiate the best interest for you."
+    - title: "Our experienced Bond Originators will liaise with all major and niche banks to ensure that we negotiate the best interest for you."
       image: "fas fa-circle"
     - title: "You are kept informed of the progress every step of the way."
       image: "fas fa-circle"
-    - title: "We help you get pre-qualification upfront, before you start house-hunting. That way you will know your credit score and exactly what you can afford."
+    - title: "We help you get pre-qualified upfront, before you start house-hunting. That way you will know your credit score and exactly what you can afford."
       image: "fas fa-circle"
     - title: "We remove all of the hassle of applying for a Home Loan by guiding you on the banks' requirements and helping you gather all the necessary documents."
       image: "fas fa-circle"
@@ -145,30 +145,37 @@ clients:
       - title: "ABSA"
         url: https://www.absa.co.za
         logo: assets/img/clients/absa-bw.png
+
       - title: "FNB"
         url: https://www.fnb.co.za/
         logo: assets/img/clients/fnb-n.png
-      - title: "Investec"
-        url: https://www.investec.co.za/
-        logo: assets/img/clients/investec.png
-      - title: "Ithala Bank"
-        url: https://www.ithala.co.za/
-        logo: assets/img/clients/ithala-bank.png
+
       - title: "Housing Investment Partners"
         url: https://www.hiphousing.co.za/
         logo: assets/img/clients/hip.jpg
-      - title: "Rand Merchant Bank"
-        url: https://www.rmb.co.za
-        logo: assets/img/clients/rmb-img-n.png
-      - title: "Sentinal Homes"
-        url: https://www.sentinelhomes.co.za/
-        logo: assets/img/clients/sentinal-homes.png
+      
+      - title: "Investec"
+        url: https://www.investec.co.za/
+        logo: assets/img/clients/investec.png
+      
+      - title: "Ithala Bank"
+        url: https://www.ithala.co.za/
+        logo: assets/img/clients/ithala-bank.png
+
       - title: "Nedbank"
         url: https://www.nedbank.co.za
         logo: assets/img/clients/nedbank-bw.png
+      
+      - title: "Rand Merchant Bank"
+        url: https://www.rmb.co.za
+        logo: assets/img/clients/rmb-img-n.png
+
       - title: "Standard Bank"
         url: https://www.standardbank.co.za/
         logo: assets/img/clients/SBSA-bw.png
+      - title: "Sentinal Homes"
+        url: https://www.sentinelhomes.co.za/
+        logo: assets/img/clients/sentinal-homes.png
     
 team:
     title: "Contact Us"
