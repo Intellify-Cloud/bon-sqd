@@ -1,0 +1,141 @@
+// Calculators Section
+.calculators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 1rem;
+//  min-height: 100vh; // Ensures it takes full viewport height
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Center all child elements
+    justify-content: center;
+  }
+
+  // Grid layout
+  &-grid,
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    
+    // Mobile responsive: stack vertically
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Calculator card styling
+  &-card,
+  &__card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  &-icon,
+  &__icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: $primary;
+    
+    i {
+      padding: 1.5rem;
+      border-radius: 50%;
+      background-color: rgba($primary, 0.1);
+      display: inline-block;
+    }
+  }
+  
+  &-title,
+  &__card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  &-desc,
+  &__desc {
+    font-size: 1rem;
+    color: $gray-400;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  &-footer,
+  &__card-footer {
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  // Button styling
+  .btn,
+  &__button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    
+    &:hover {
+      background-color: $primary;
+      color: $white;
+      transform: translateY(-2px);
+    }
+    
+    &.btn-xl {
+      padding: 15px 30px;
+      font-size: 1.1rem;
+    }
+    
+    &.shadow {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+// Ensure both naming conventions work
+.calculator-card {
+  @extend .calculators-card;
+}
+
+.calculator-icon {
+  @extend .calculators-icon;
+}
+
+.calculator-title {
+  @extend .calculators-title;
+}
+
+.calculator-desc {
+  @extend .calculators-desc;
+}
+
+.calculator-footer {
+  @extend .calculators-footer;
+}
