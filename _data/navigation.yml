@@ -7,8 +7,6 @@ nav:
     section: about
   - title: "Team"
     section: team
-  - title: "Calculators"
-    section: calculators
   - title: "Contact"
     url: /contact
 
