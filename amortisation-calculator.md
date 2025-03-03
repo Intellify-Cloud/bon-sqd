@@ -10,4 +10,3 @@ background: white
         title="Extra Repayment Calculator"></iframe>
 </div>
 
-{% include team.html %}
