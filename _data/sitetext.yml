@@ -68,17 +68,19 @@ more-calculators:
     text: ""
     section: more-calculators
     list:
-      - title: "Deposit Savings Calculator"
-        desc: "Calculate how much you need to save for your deposit."
-        icon: fas fa-calculator   
-        link:
-          url: /deposit-savings-calculator
-          text: "Calculate"
+
       - title: "Amortisation Calculator"
         desc: "Calculate how your repayment is structured."
         icon: fas fa-calculator   
         link:
           url: /amortisation-calculator
+          text: "Calculate"
+          
+      - title: "Deposit Savings Calculator"
+        desc: "Calculate how much you need to save for your deposit."
+        icon: fas fa-calculator   
+        link:
+          url: /deposit-savings-calculator
           text: "Calculate"
       - title: "Additional Payment Calculator"
         desc: "Calculate your savings on your total home loan cost by paying a little extra into your bond."
