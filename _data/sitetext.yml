@@ -220,9 +220,11 @@ testimonials:
     text: "What Others Say"
     section: testimonials
     people:
-      - name: "Anon D. ☆☆☆☆☆"
-        testimony: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      - name: "Yvette Govender ☆☆☆☆☆"
+        testimony: "I had the pleasure of working with Lara Patterson and I can confidently say that Lara’s dedication to client service is unmatched—she takes the time to listen, understand goals, and ensures that every question is answered with care. Her financial acumen always shines through, making complex concepts easy to grasp. I will definitely be referring Bond Squad to friends looking to secure bonds."
       
+      - name: "Eldorette & Jacques Smith"
+        testimony: "Hayley from Bond Squad recently assisted us in securing a bond for a house we bought privately in Toti. She quickly sourced several competitive quotes. She was able to reverse an initial decline from our own bank and improve the terms. She went over and above, and exceeded our expectations. I would highly recommend her services. My advice to buyers would be, &quot;Don't go it alone, definitely partner with Bond Squad.&quot;."
 
 contact:
     title: "Contact Us"
