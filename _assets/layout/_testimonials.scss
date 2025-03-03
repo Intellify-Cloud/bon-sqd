@@ -1,22 +1,43 @@
-// Styling for the team section
-.team-member {
-  margin-bottom: 50px;
-  text-align: center;
-  img {
-    width: 225px;
-    height: 225px;
-    border: 7px solid fade-out($black, 0.9);
-  }
-  h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
-  }
-  p {
-    margin-top: 0;
+// Scoped styling for the testimonial section
+.testimonials {
+  background-color: #c6f7ff; // Updated background color
+  padding: 2.5rem 0;
+
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    margin-bottom: 50px;
+
+    img {
+      width: 225px;
+      height: 225px;
+      border: 7px solid fade-out($black, 0.9);
+      border-radius: 50%;
+    }
+
+    h5 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-style: italic;
+      color: $gray-900;
+      margin-top: 0;
+    }
   }
 }
 
+// Keep highlight separate if used elsewhere
 .highlight {
   background-color: #fff2ac;
   background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
