@@ -6,6 +6,6 @@ background: white
 
 <div>
     <iframe class="bond-calc" frameborder="0"
-        src="http://www.ooba.co.za/calculators/affordability-calculator?iframe=true&iftype=nobrand"
+        src="http://www.ooba.co.za/calculators/affordability-calculator?iframe=true&iftype=evogroup"
         title="Affordability Calculator"></iframe>
 </div>
