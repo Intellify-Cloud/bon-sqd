@@ -1,43 +1,52 @@
-// Scoped styling for the testimonial section
-.testimonials {
-  background-color: #c6f7ff; // Updated background color
+/* Scoped styling for the testimonial section */
+#testimonials {
+  position: relative;
   padding: 2.5rem 0;
-
-  .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    border-radius: 12px;
-    padding: 2.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-    margin-bottom: 50px;
-
-    img {
-      width: 225px;
-      height: 225px;
-      border: 7px solid fade-out($black, 0.9);
-      border-radius: 50%;
-    }
-
-    h5 {
-      margin-top: 20px;
-      margin-bottom: 5px;
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-
-    p {
-      font-style: italic;
-      color: $gray-900;
-      margin-top: 0;
-    }
-  }
+  width: 100%;
 }
 
-// Keep highlight separate if used elsewhere
+#testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/Background.png');
+  background-repeat: repeat;
+  background-size: 250px auto;
+  //filter: blur(1px);
+  opacity: 0.2; /* Makes the image 30% darker */
+  z-index: -1;
+}
+
+#testimonials .team-member {
+  /* Keep your existing team-member styling */
+  position: relative; /* Ensures content stays above the blurred background */
+  /* rest of your styles... */
+}
+
+#testimonials .team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+#testimonials .team-member h5 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#testimonials .team-member p {
+  font-style: italic;
+  color: #212529;
+  margin-top: 0;
+}
+
+/* Keep highlight separate if used elsewhere */
 .highlight {
   background-color: #fff2ac;
   background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);

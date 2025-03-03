@@ -1,5 +1,4 @@
-
-// Styling for the services section
+// Your existing CSS
 .textblock-heading {
   margin: 5px 0;
   text-transform: none;
@@ -7,30 +6,43 @@
 }
 
 .textblock-image {
-min-width: 30px; // Reduced from 50px to make bullets take less space
-font-size: 0.8em; // Make the icon/bullet smaller
-text-align: center; // Center the bullet in its column
-padding-top: 8px; // Align bullet vertically with the text
-color: #01acc8;
+  min-width: 30px;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 8px;
+  color: #01acc8;
 }
 
 .textblock-title {
-line-height: 1.6em; // Slightly reduced line height for tighter lists
-padding: 8px;
-text-align: left; // Explicitly set text to left-align
+  line-height: 1.6em;
+  padding: 8px;
+  text-align: left;
 }
 
-// Add this to ensure the list items themselves are also left-aligned
 .textblock-item {
   display: flex;
-  align-items: center; // Center items vertically
+  align-items: center;
   text-align: left;
-  margin-bottom: 10px; // Add spacing between list items
+  margin-bottom: 10px;
 }
 
-// To ensure any container doesn't override the alignment
 .textblock-list {
-text-align: left;
-padding-left: 0; // Remove any default padding
-align-items: center;
+  text-align: left;
+  padding-left: 0;
+  align-items: center;
+}
+
+// Add the wave background to a container that will wrap your content
+.wave-container {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400'%3E%3Crect width='1200' height='400' fill='%23ffffff'/%3E%3Cpath d='M0,150 C100,80 200,180 300,150 C400,120 500,200 600,160 C700,120 800,180 900,130 C1000,80 1100,150 1200,120 L1200,400 L0,400 Z' fill='%23c2e7f2' fill-opacity='0.2'/%3E%3Cpath d='M0,200 C100,240 200,190 300,220 C400,250 500,180 600,210 C700,240 800,190 900,230 C1000,270 1100,200 1200,230 L1200,400 L0,400 Z' fill='%239ad8e8' fill-opacity='0.3'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+/* Make sure text is readable over the waves */
+.wave-container .container {
+  position: relative;
+  z-index: 2;
 }
