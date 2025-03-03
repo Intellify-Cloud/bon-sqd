@@ -217,7 +217,7 @@ team:
 
 testimonials:
     title: "TESTIMONIALS"
-    text: "What Others Say"
+    text: ""
     section: testimonials
     people:
       - name: "Yvette Govender ☆☆☆☆☆"
