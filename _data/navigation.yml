@@ -9,6 +9,8 @@ nav:
     section: team
   - title: "Calculators"
     section: calculators
+  - title: "Testimonials"
+    section: testimonials
   - title: "Contact"
     url: /contact
 
