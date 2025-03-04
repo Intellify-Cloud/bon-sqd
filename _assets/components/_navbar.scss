@@ -3,7 +3,7 @@
  */
 
  #mainNav {
-  background-color: $gray-100;
+  background-color: $gray-100;  
   padding: 0.2rem .5rem;
   transition: all 0.3s ease-in-out;
 
@@ -73,6 +73,7 @@
       justify-content: center; // Center items
     }
   }
+
 
   @media (min-width: 1210px) {
     padding: 0.2rem 2rem;
