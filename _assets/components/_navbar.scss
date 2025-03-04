@@ -1,22 +1,15 @@
-/*! 
- * Modernized Navbar Styling
- */
-
- #mainNav {
-  background-color: $gray-100;  
-  padding: 0.2rem .5rem;
+#mainNav {
+  background-color: $gray-100;
+  padding: 0.5rem 1rem;
   transition: all 0.3s ease-in-out;
 
   .navbar-toggler {
     font-size: 15px;
     padding: 8px 12px;
-    text-transform: uppercase;
     color: white;
     border: none;
     background-color: $primary;
     @include heading-font;
-    transition: background-color 0.3s;
-
     &:hover {
       background-color: darken($primary, 10%);
     }
@@ -29,15 +22,9 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transition: color 0.3s ease-in-out;
-
-    &.active,
-    &:active,
-    &:focus,
     &:hover {
       color: darken($primary, 10%);
     }
-
     > img {
       height: 90px;
       max-width: 100%;
@@ -46,61 +33,48 @@
 
   .navbar-nav {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
     gap: 0.5rem;
-  }
-
-  .nav-item {
-    .nav-link {
-      font-size: 14px; // Slightly smaller text
-      padding: 0.2rem 0.4rem;
-      color: #000;
-      letter-spacing: 0.4px;
-      @include heading-font;
-      transition: color 0.3s;
-
-      &.active,
-      &:hover {
-        color: $primary;
+    .nav-item {
+      .nav-link {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+        color: #000;
+        @include heading-font;
+        &:hover, &.active {
+          color: $primary;
+        }
       }
     }
   }
 
-  @media (max-width: 1300px) {
+  // Mobile breakpoint (below 992px)
+  @media (max-width: 1200px) {
     .navbar-nav {
-      flex-wrap: wrap; // Allow wrapping only on smaller screens
-      justify-content: center; // Center items
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      //background-color: $gray-100;
+      width: 100%;
+      .nav-item {
+        width: 100%;
+        text-align: center;
+        .nav-link {
+          padding: 0.5rem 1rem;
+          display: block;
+        }
+      }
     }
   }
 
-
-  @media (min-width: 1210px) {
-    padding: 0.2rem 2rem;
-    border: none;
-    background-color: $gray-100;
-
+  // Desktop breakpoint (992px and up)
+  @media (min-width: 1100) {
+    padding: 0.5rem 2rem;
     .navbar-brand {
       font-size: 2rem;
-      transition: all 0.5s;
-      padding: 2px 0;
     }
-
-    .navbar-nav .nav-item .nav-link {
-      padding: 0.2rem 1rem;
-    }
-
     &.navbar-shrink {
-      background-color: $gray-100;
-      padding: 0.2rem 1rem;
-
       .navbar-brand {
         font-size: 1.5rem;
-        padding: 6px 0;
-      }
-
-      .navbar-brand > img {
-        height: 45px;
       }
     }
   }
