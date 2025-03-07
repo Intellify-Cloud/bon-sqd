@@ -10,6 +10,7 @@ background: gray
       <h2 class="section-heading text-uppercase">KwaZulu-Natal</h2>
       <h3>Hayley Craig</h3>
       <p>Call: <a href="tel:+27836760912">083 676 0912</a></p>
+      <p>WhatsApp: <a href="https://wa.me/27836760912" target="_blank">Message me</a></p>
       <p>Email: <a href="mailto:hayley.craig@evogroup.co.za?subject=Mail from Evo Website">hayley.craig@evogroup.co.za</a></p>
       <p>Morningside</p>
       <p>Durban</p>

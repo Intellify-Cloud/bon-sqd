@@ -160,10 +160,6 @@ clients:
         url: https://www.investec.co.za/
         logo: assets/img/clients/investec.png
       
-      - title: "Ithala Bank"
-        url: https://www.ithala.co.za/
-        logo: assets/img/clients/ithala-bank.png
-
       - title: "Nedbank"
         url: https://www.nedbank.co.za
         logo: assets/img/clients/nedbank-bw.png
