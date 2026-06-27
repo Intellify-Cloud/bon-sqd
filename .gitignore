@@ -8,3 +8,6 @@ _site
 Gemfile.lock
 unused
 bootstrap-reference.html
+
+docs/
+test-results/
