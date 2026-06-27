@@ -1,0 +1,39 @@
+description: Expert bond origination and home loan assistance in KwaZulu-Natal and the Western Cape.
+sections:
+  - title: Explore
+    links:
+      - name: Why Bond Squad
+        section: textblock
+      - name: Services
+        section: services
+      - name: About Us
+        section: about
+      - name: Our Team
+        section: team
+      - name: Testimonials
+        section: testimonials
+  - title: Calculators
+    links:
+      - name: Affordability
+        url: /affordability-calculator
+      - name: Repayments
+        url: /bond-calculator
+      - name: Transfer Costs
+        url: /transfer-cost-calculator
+      - name: More Calculators
+        section: more-calculators
+  - title: Contact
+    links:
+      - name: Contact Bond Squad
+        url: /contact
+      - name: Email Us
+        url: mailto:bond.squad@evogroup.co.za
+      - name: Privacy Statement
+        url: /privacy-statement
+      - name: Data Sharing
+        url: /data-sharing-agreement
+legal_links:
+  - name: Privacy Statement
+    url: /privacy-statement
+  - name: Data Sharing Agreement
+    url: /data-sharing-agreement

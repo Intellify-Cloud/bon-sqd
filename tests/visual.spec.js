@@ -12,9 +12,18 @@ for (const target of pages) {
     page.on('pageerror', error => errors.push(error.stack || error.message));
     await page.goto(target.path, { waitUntil: 'networkidle' });
 
-    await expect(page.locator('nav')).toBeVisible();
+    await expect(page.getByRole('navigation', { name: 'Primary navigation' })).toBeVisible();
     await expect(page.locator('main')).toBeVisible();
     await expect(page.locator('footer')).toBeVisible();
+
+    const pageTitle = page.locator('.page-title');
+    if (await pageTitle.count()) {
+      const positions = await page.evaluate(() => ({
+        navBottom: document.querySelector('#mainNav').getBoundingClientRect().bottom,
+        titleTop: document.querySelector('.page-title').getBoundingClientRect().top,
+      }));
+      expect(positions.titleTop).toBeGreaterThanOrEqual(positions.navBottom);
+    }
 
     const overflow = await page.evaluate(() => ({
       viewport: document.documentElement.clientWidth,

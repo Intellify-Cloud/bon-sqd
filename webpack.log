@@ -1,0 +1,576 @@
+assets by status 3.24 MiB [1m[32m[cached][39m[22m 18 assets
+assets by path [1m[32m.[39m[22m 383 KiB
+  asset [1m[32mbundle.css[39m[22m 214 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
+  asset [1m[32mbundle.js[39m[22m 169 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main) 1 related asset
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 383 KiB (3.24 MiB) = [1m[32mbundle.css[39m[22m 214 KiB [1m[32mbundle.js[39m[22m 169 KiB 18 auxiliary assets
+orphan modules 252 KiB (javascript) 3.24 MiB (asset) 2.96 KiB (runtime) [1m[33m[orphan][39m[22m 46 modules
+runtime modules 1.29 KiB 4 modules
+cacheable modules 506 KiB (javascript) 239 KiB (css/mini-extract)
+  javascript modules 506 KiB
+    modules by path [1m./node_modules/[39m[22m 504 KiB
+      [1m./node_modules/jquery/dist/jquery.js[39m[22m 281 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+      [1m./node_modules/popper.js/dist/esm/popper.js[39m[22m 86.4 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+      + 3 modules
+    modules by path [1m./_assets/[39m[22m 2.47 KiB
+      [1m./_assets/bundle.js[39m[22m 252 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+      [1m./_assets/site.scss[39m[22m 50 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+      [1m./_assets/site.js[39m[22m 2.18 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  css modules 239 KiB
+    css ./node_modules/css-loader/dist/cjs.js![1m./node_modules/@fortawesome/fontawesome-free/css/all.css[39m[22m 73.2 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js![1m./_assets/site.scss[39m[22m 166 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 7, column 8 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/bootstrap.scss:7:8:
+Sass @import rules are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+7 | @import "functions";
+
+
+node_modules\bootstrap\scss\bootstrap.scss 8:9  @import
+_assets\vendor\_bootstrap.scss 11:9             @use
+_assets\site.scss 3:1                           root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 8, column 8 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/bootstrap.scss:8:8:
+Sass @import rules are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+8 | @import "variables";
+
+
+node_modules\bootstrap\scss\bootstrap.scss 9:9  @import
+_assets\vendor\_bootstrap.scss 11:9             @use
+_assets\site.scss 3:1                           root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 9, column 8 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/bootstrap.scss:9:8:
+Sass @import rules are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+9 | @import "mixins";
+
+
+node_modules\bootstrap\scss\bootstrap.scss 10:9  @import
+_assets\vendor\_bootstrap.scss 11:9              @use
+_assets\site.scss 3:1                            root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 10, column 8 of file:///C:/Anti-Gravity%20Skills/bon-sqd/_assets/vendor/_bootstrap.scss:10:8:
+Sass @import rules are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+10 | @import '../../node_modules/bootstrap/scss/bootstrap';
+
+
+_assets\vendor\_bootstrap.scss 11:9  @use
+_assets\site.scss 3:1                root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 10, column 8 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/bootstrap.scss:10:8:
+Sass @import rules are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+10 | @import "root";
+
+
+node_modules\bootstrap\scss\bootstrap.scss 11:9  @import
+_assets\vendor\_bootstrap.scss 11:9              @use
+_assets\site.scss 3:1                            root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 20, column 8 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:20:8:
+Global built-in functions are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+[1m[33mUse map.merge instead[39m[22m[1m.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+20 | $grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+
+node_modules\bootstrap\scss\_variables.scss 21:9  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9    @import
+_assets\vendor\_bootstrap.scss 11:9               @use
+_assets\site.scss 3:1                             root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 47, column 9 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:47:9:
+Global built-in functions are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+[1m[33mUse map.merge instead[39m[22m[1m.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+47 | $colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+
+node_modules\bootstrap\scss\_variables.scss 48:10  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9     @import
+_assets\vendor\_bootstrap.scss 11:9                @use
+_assets\site.scss 3:1                              root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 65, column 12 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/vendor/_rfs.scss:65:12:
+The Sass if() syntax is [1m[33mdeprecated[39m[22m[1m in favor of the modern CSS syntax.
+
+Suggestion: if(sass(type-of($fs) == "number"): unit($fs); else: false)
+
+More info: https://sass-lang.com/d/if-function
+
+65 |   $fs-unit: if(type-of($fs) == "number", unit($fs), false);
+
+
+node_modules\bootstrap\scss\vendor\_rfs.scss 66:13  @import
+node_modules\bootstrap\scss\_mixins.scss 6:9        @import
+node_modules\bootstrap\scss\bootstrap.scss 10:9     @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 68, column 15 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/vendor/_rfs.scss:68:15:
+The Sass if() syntax is [1m[33mdeprecated[39m[22m[1m in favor of the modern CSS syntax.
+
+Suggestion: if(sass($important): " !important"; else: "")
+
+More info: https://sass-lang.com/d/if-function
+
+68 |   $rfs-suffix: if($important, " !important", "");
+
+
+node_modules\bootstrap\scss\vendor\_rfs.scss 69:16  @import
+node_modules\bootstrap\scss\_mixins.scss 6:9        @import
+node_modules\bootstrap\scss\bootstrap.scss 10:9     @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 76, column 15 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:76:15:
+Global built-in functions are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+[1m[33mUse map.merge instead[39m[22m[1m.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+76 | $theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+
+node_modules\bootstrap\scss\_variables.scss 77:16  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9     @import
+_assets\vendor\_bootstrap.scss 11:9                @use
+_assets\site.scss 3:1                              root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 99, column 15 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_functions.scss:99:15:
+The Sass if() syntax is [1m[33mdeprecated[39m[22m[1m in favor of the modern CSS syntax.
+
+Suggestion: if(sass($level > 0): $black; else: $white)
+
+More info: https://sass-lang.com/d/if-function
+
+99 |   $color-base: if($level > 0, $black, $white);
+
+
+node_modules\bootstrap\scss\_functions.scss 100:16  @import
+node_modules\bootstrap\scss\bootstrap.scss 8:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 119, column 10 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_functions.scss:119:10:
+The Sass if() syntax is [1m[33mdeprecated[39m[22m[1m in favor of the modern CSS syntax.
+
+Suggestion: if(sass($return-calc == true): calc(#{$value1} + #{$value2}); else: $value1 + unquote(" + ") + $value2)
+
+More info: https://sass-lang.com/d/if-function
+
+119 |   @return if($return-calc == true, calc(#{$value1} + #{$value2}), $value1 + unquote(" + ") + $value2);
+
+
+node_modules\bootstrap\scss\_functions.scss 120:11  @import
+node_modules\bootstrap\scss\bootstrap.scss 8:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 137, column 10 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:137:10:
+Global built-in functions are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+[1m[33mUse map.merge instead[39m[22m[1m.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+137 | $spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+
+node_modules\bootstrap\scss\_variables.scss 138:11  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 139, column 10 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_functions.scss:139:10:
+The Sass if() syntax is [1m[33mdeprecated[39m[22m[1m in favor of the modern CSS syntax.
+
+Suggestion: if(sass($return-calc == true): calc(#{$value1} - #{$value2}); else: $value1 + unquote(" - ") + $value2)
+
+More info: https://sass-lang.com/d/if-function
+
+139 |   @return if($return-calc == true, calc(#{$value1} - #{$value2}), $value1 + unquote(" - ") + $value2);
+
+
+node_modules\bootstrap\scss\_functions.scss 140:11  @import
+node_modules\bootstrap\scss\bootstrap.scss 8:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 151, column 8 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:151:8:
+Global built-in functions are [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 3.0.0.
+[1m[33mUse map.merge instead[39m[22m[1m.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+151 | $sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+
+node_modules\bootstrap\scss\_variables.scss 152:9  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9     @import
+_assets\vendor\_bootstrap.scss 11:9                @use
+_assets\site.scss 3:1                              root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 177, column 42 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:177:42:
+darken() is [1m[33mdeprecated[39m[22m[1m. Suggestions:
+
+color.scale($color, $lightness: -38.25%)
+color.adjust($color, $lightness: -15%)
+
+More info: https://sass-lang.com/d/color-functions
+
+177 | $link-hover-color:                        darken($link-color, 15%) !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 178:43  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 301, column 30 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:301:30:
+Using / for division outside of calc() is [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+301 | $headings-margin-bottom:      $spacer / 2 !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 302:31  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 371, column 30 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:371:30:
+lighten() is [1m[33mdeprecated[39m[22m[1m. Suggestions:
+
+color.scale($color, $lightness: 9.7081218274%)
+color.adjust($color, $lightness: 7.5%)
+
+More info: https://sass-lang.com/d/color-functions
+
+371 | $table-dark-border-color:     lighten($table-dark-bg, 7.5%) !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 372:31  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 484, column 40 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:484:40:
+lighten() is [1m[33mdeprecated[39m[22m[1m. Suggestions:
+
+color.scale($color, $lightness: 41.1290322581%)
+color.adjust($color, $lightness: 25%)
+
+More info: https://sass-lang.com/d/color-functions
+
+484 | $input-focus-border-color:              lighten($component-active-bg, 25%) !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 485:41  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 496, column 72 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:496:72:
+Using / for division outside of calc() is [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+496 | $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 497:73  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 549, column 48 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:549:48:
+lighten() is [1m[33mdeprecated[39m[22m[1m. Suggestions:
+
+color.scale($color, $lightness: 57.5806451613%)
+color.adjust($color, $lightness: 35%)
+
+More info: https://sass-lang.com/d/color-functions
+
+549 | $custom-control-indicator-active-bg:            lighten($component-active-bg, 35%) !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 550:49  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 566, column 48 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:566:48:
+Using / for division outside of calc() is [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($custom-control-indicator-size, 2) or calc($custom-control-indicator-size / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+566 | $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 567:49  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 624, column 45 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:624:45:
+lighten() is [1m[33mdeprecated[39m[22m[1m. Suggestions:
+
+color.scale($color, $lightness: 57.5806451613%)
+color.adjust($color, $lightness: 35%)
+
+More info: https://sass-lang.com/d/color-functions
+
+624 | $custom-range-thumb-active-bg:               lighten($component-active-bg, 35%) !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 625:46  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 711, column 36 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:711:36:
+Using / for division outside of calc() is [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+711 | $nav-divider-margin-y:              $spacer / 2 !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 712:37  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Warning on line 716, column 36 of file:///C:/Anti-Gravity%20Skills/bon-sqd/node_modules/bootstrap/scss/_variables.scss:716:36:
+Using / for division outside of calc() is [1m[33mdeprecated[39m[22m[1m and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+716 | $navbar-padding-y:                  $spacer / 2 !default;
+
+
+node_modules\bootstrap\scss\_variables.scss 717:37  @import
+node_modules\bootstrap\scss\bootstrap.scss 9:9      @import
+_assets\vendor\_bootstrap.scss 11:9                 @use
+_assets\site.scss 3:1                               root stylesheet
+[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+[1m[33mWARNING[39m[22m in [1m./_assets/site.scss[39m[22m (./_assets/site.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./_assets/site.scss)
+[1mModule Warning (from ./node_modules/sass-loader/dist/cjs.js):
+355 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.[39m[22m
+ @ ./_assets/site.scss
+ @ ./_assets/bundle.js 9:0-22
+
+webpack 5.108.1 compiled with [1m[33m26 warnings[39m[22m in 13415 ms

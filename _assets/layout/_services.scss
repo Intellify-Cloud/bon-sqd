@@ -3,20 +3,30 @@
 // Services Section
 
 #services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; // Keeps spacing consistent
-  justify-content: space-between; // Maintain original layout for wider screens
+  .card-deck.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 
-  .card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Example box shadow
-    border-radius: 10px;
-    transition: box-shadow 0.3s ease;
-    color: $primary;
+    > .card {
+      flex: 1 1 300px;
+      max-width: 360px;
+      border: none;
+      box-shadow: $shadow-md;
+      border-radius: 12px;
+      overflow: hidden;              // clips child corners to match parent radius
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    &:hover {
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+      }
+
+      // Keep icon stack in primary teal, body text dark
+      .fa-stack {
+        color: $color-primary;
+      }
     }
   }
 
@@ -25,40 +35,19 @@
     background: $white;
   }
 
+  // Button styling inherits from _buttons.scss (solid primary, pill shape, no border).
   .btn {
-    border-radius: 30px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-
-    &:hover {
-      background-color: $primary; // Example hover color
-      transform: translateY(-2px);
-    }
+    font-weight: $font-weight-bold;
 
     &:active {
-      transform: translateY(1px);
-    }
-  }
-
-  // Responsive behavior: Updated to stack cards vertically when width is below 1000px
-  @media (max-width: 1000px) {
-    flex-direction: column; // Stack elements vertically
-    align-items: center; // Center align stacked cards
-
-    .card {
-      width: 100%; // Make each card take full width
-      max-width: 500px; // Optional: Prevent them from becoming too wide
+      transform: scale(0.95);
     }
   }
 }
 
-// Styling for the service headings
 .service-heading {
   margin: 15px 0;
   font-size: 24px;
   font-weight: 600;
-  text-align: center; // Keeps heading centered
+  text-align: center;
 }

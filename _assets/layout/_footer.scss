@@ -1,61 +1,168 @@
 @use '../abstracts' as *;
 
 .footer {
-  background-color: $white;
-}
+  padding: clamp(4rem, 8vw, 7rem) 0 0;
+  border-top: 1px solid $gray-200;
+  background: $white;
+  color: $color-text;
 
-// Styling for the footer
-.footer {
-  padding: 30px 0;
-  text-align: center;
-  span.copyright {
-    font-size: 90%;
-    line-height: 40px;
-    text-transform: none;
-    @include heading-font;
+  &__main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr);
+    gap: clamp(3rem, 8vw, 7rem);
+    align-items: start;
   }
-  ul.quicklinks {
-    font-size: 90%;
-    line-height: 40px;
-    margin-bottom: 0;
-    text-transform: none;
-    @include heading-font;
+
+  &__brand {
+    max-width: 420px;
   }
-}
 
-.whatsapp {
-  position: fixed;
-  right: 8px;
-  top: 85%;
-}
-.whatsapp h5 {
-  color: rgb(255, 255, 255);
-  background: #20b20f;
-  padding: 8px;
-  border-radius: 10px;
-}
+  &__logo {
+    display: inline-block;
 
-ul.social-buttons {
-  margin-bottom: 0;
-  li {
+    img {
+      width: auto;
+      height: 70px;
+    }
+  }
+
+  &__description {
+    max-width: 36rem;
+    margin: $space-4 0;
+    color: $gray-600;
+    line-height: 1.7;
+  }
+
+  &__social,
+  &__links,
+  &__legal {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__social {
+    display: flex;
+    gap: $space-3;
+
     a {
-      font-size: 20px;
-      line-height: 50px;
-      display: block;
-      width: 50px;
-      height: 50px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-      color: white;
-      border-radius: 100%;
-      outline: none;
-      background-color: #DB5B4F;
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: $primary;
+      display: inline-flex;
+      width: 42px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $gray-300;
+      border-radius: $radius-circle;
+      color: $gray-700;
+      transition: color $transition-base, border-color $transition-base, background-color $transition-base;
+
+      &:hover,
+      &:focus-visible {
+        border-color: $primary;
+        background: $primary;
+        color: $white;
+        text-decoration: none;
       }
+    }
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp($space-4, 4vw, $space-5);
+    box-shadow: none;
+    background: transparent;
+    position: static;
+  }
+
+  &__heading {
+    margin-bottom: $space-3;
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__links {
+    display: grid;
+    gap: $space-2;
+
+    a {
+      color: $gray-600;
+      font-size: 0.95rem;
+      font-weight: $font-weight-regular;
+
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: $space-4;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: clamp(3rem, 6vw, 5rem);
+    padding: $space-4 0;
+    border-top: 1px solid $gray-200;
+    color: $gray-600;
+    font-size: 0.8rem;
+  }
+
+  &__copyright {
+    margin: 0;
+  }
+
+  &__legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-2 $space-4;
+    justify-content: flex-end;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .footer {
+    &__main {
+      grid-template-columns: 1fr;
+    }
+
+    &__brand {
+      max-width: 600px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .footer {
+    padding-top: 3rem;
+
+    &__navigation {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: $space-5 $space-4;
+    }
+
+    &__section:last-child {
+      grid-column: 1 / -1;
+    }
+
+    &__bottom {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &__legal {
+      justify-content: flex-start;
     }
   }
 }

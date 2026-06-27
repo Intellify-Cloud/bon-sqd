@@ -1,18 +1,26 @@
 
-
 @use '../abstracts' as *;
 
-// Button styling
+// Button styling — all buttons are solid primary, pill-shaped, no border.
 .btn {
-  font-family: 'Roboto', sans-serif; // Example font family
-  font-weight: 400;
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
-  border-radius: 30px;
+  border-radius: $radius-pill;
   padding: 12px 24px;
   margin: 8px;
   transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 .btn-xl {
@@ -21,32 +29,18 @@
 }
 
 .btn-primary {
-  background-color: #aaa;
-  color: $primary;
-  
-  &:hover {
-    background-color: darken($primary, 10%);
-  }
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
 
-  &:active {
-    transform: scale(0.95);
-    background-color: $primary;
-    color: $white;
+  &:hover {
+    background-color: darken($color-primary, 10%);
+    color: $color-white;
+    border: none;
   }
 }
 
+// Make outline variant a solid primary button too (single-colour, no border).
 .btn-outline-primary {
-  background-color: $white;
-  border: 2px solid $primary;
-  color: $primary;
-
-  &:hover {
-    background-color: $primary;
-    border: 2px solid $primary;
-    color: $white;
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
+  @extend .btn-primary;
 }

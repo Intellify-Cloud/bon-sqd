@@ -2,21 +2,24 @@
 
 // Responsive Section Padding with Golden Ratio
 .page-section {
-  padding: 5vw 8vw;
-  
-  h2.section-heading {
-    font-size: clamp(3rem, 4vw, 3rem);
-    margin-bottom: 0.618em;
+  padding: 5vw 2vw 3vw;
+
+  .container {
+    max-width: 1200px;
   }
 
-  
-  h3.section-subheading, h3.textblock-subheading {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+  h2.section-heading {
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    margin-bottom: 1em;
+  }
+
+  h3.section-subheading,
+  h3.textblock-subheading {
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 400;
-    //font-style: italic;
-    margin-bottom: 3em;
+    margin-bottom: 2.5rem;
     text-transform: none;
-    font-family: 'Comfortaa', serif; // Direct replacement
+    font-family: $font-family-base;
   }
 }
 
@@ -286,10 +289,21 @@ h6 {
   }
 }
 
+
 body {
   overflow-x: hidden;
   font-family: $font-family-base;
   -webkit-tap-highlight-color: $primary;
+  font-size: 15px;                 // base paragraph size on all screen sizes
+
+  @media (max-width: ($breakpoint-lg - 1px)) {
+    font-size: 14px;               // slightly smaller on tablets / mobile
+  }
+}
+
+// Darker muted text for better readability everywhere
+.text-muted {
+  color: $gray-700 !important;     // #495057 — darker than Bootstrap default (#868e96)
 }
 
 .skip-link {
@@ -313,7 +327,7 @@ body {
 
 @media (max-width: ($breakpoint-lg - 1px)) {
   #pagecontainer {
-    padding-top: 100px;
+    padding-top: 125px;
   }
 }
 
@@ -345,7 +359,38 @@ body {
 }
 
 .related-calculators {
-  padding: $space-5 0;
+  margin-top: $space-5;
+  margin-bottom: $space-5;
+  padding: $space-5;
+  border: 1px solid $gray-200;
+  border-radius: 12px;
+  background: $white;
+  box-shadow: $shadow-sm;
+
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: $space-2 $space-4;
+    padding-left: $space-4;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .page-title {
+    font-size: 1.85rem;
+  }
+
+  .related-calculators {
+    padding: $space-4;
+
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 .contact-card {

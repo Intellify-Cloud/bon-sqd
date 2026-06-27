@@ -5,7 +5,7 @@ description: Contact Bond Squad for home loan and bond origination assistance in
 background: gray
 ---
 
-<div class="container contact-us py-5">
+<div class="container contact-us ">
   <div class="row justify-content-center">
     {% for contact in site.data.contacts %}
       {% include contact-card.html contact=contact %}
