@@ -1,64 +1,49 @@
+{% capture seo_title %}{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | {{ site.brand_name }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+{% assign seo_description = page.description | default: site.description %}
+{% assign seo_image = page.image | default: '/social_916x509.jpg' %}
 <head>
-{% if site.analytics.google %}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-		gtag('config', '{{ site.analytics.google }}');
-  </script>
-<!-- End Google Analytics -->
-
-{% endif %}
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="title" content="{{ site.title }}">
-  <meta name="description" content="{{ site.description }}">
-  <!-- Primary Meta Tags -->
+  <meta name="description" content="{{ seo_description | strip | escape }}">
+  <meta name="author" content="{{ site.author | escape }}">
+  {% if page.noindex %}<meta name="robots" content="noindex, follow">{% endif %}
 
-  <!-- Open Graph / Facebook -->
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.baseurl }}">
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="{{ site.baseurl }}/social_916x509.jpg">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ seo_title | strip | escape }}">
+  <meta property="og:description" content="{{ seo_description | strip | escape }}">
+  <meta property="og:image" content="{{ seo_image | absolute_url }}">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{{ site.baseurl }}">
-  <meta property="twitter:title" content="{{ site.title }}">
-  <meta property="twitter:description" content="{{ site.description }}">
-  <meta property="twitter:image" content="{{ site.baseurl }}/social_916x509.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ seo_title | strip | escape }}">
+  <meta name="twitter:description" content="{{ seo_description | strip | escape }}">
+  <meta name="twitter:image" content="{{ seo_image | absolute_url }}">
 
+  <title>{{ seo_title | strip | escape }}</title>
 
-  <meta name="author" content="{{ site.author }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl }}">
-
-  <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-  <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/png">
-  <link rel="stylesheet" href="{{ site.baseurl | append: "/assets/bundle.css" | relative_url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/png">
-  <link rel="stylesheet" href="{{ site.baseurl | append: "/assets/bundle.css" | relative_url }}">
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet" type="text/css">
-
-  <script src="{{ site.baseurl | append: "/assets/bundle.js" | relative_url }}"></script>
-  <script lang="js">var baseurl = "{{ "" | relative_url }}";</script>
-
-  <!-- Page container change top padding when nav shrinks -->
-  {% if page.layout == "page" %}
-  <style>
-    #pagecontainer {padding-top: 150px;}
-	@media only screen and (max-width: 991px) {
-	  #pagecontainer {padding-top: 100px;}
-	}
-  </style>
+  {% if page.url == '/' or page.url == '/index.html' %}
+    {% include structured-data.html %}
   {% endif %}
-  
+
+  <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
+  <link rel="stylesheet" href="{{ '/assets/bundle.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+  {% assign analytics_id = site.analytics.google | default: '' %}
+  {% if analytics_id != '' and analytics_id != 'G-XXX' %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ analytics_id | escape }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ analytics_id | escape }}');
+    </script>
+  {% endif %}
+
+  <script defer src="{{ '/assets/bundle.js' | relative_url }}"></script>
+  <script>var baseurl = "{{ '' | relative_url }}";</script>
 </head>

@@ -1,3 +1,5 @@
+const $ = require('jquery');
+
 $(function () {
     // Smooth scrolling for navigation links
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on("click", function () {

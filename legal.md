@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+description: Review Bond Squad's privacy policy and information about how personal data is collected and used.
 background: grey
 ---
 <div class="col-lg-12 text-center">

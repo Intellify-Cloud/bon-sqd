@@ -1,7 +1,7 @@
 const path = require('path');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -9,7 +9,7 @@ module.exports = {
         hints: false
     },
     optimization: {
-        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+        minimizer: [new TerserJSPlugin({}), new CssMinimizerPlugin({})],
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -31,7 +31,6 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    'style-loader',
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader'
@@ -39,11 +38,12 @@ module.exports = {
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "url-loader?limit=10000&mimetype=application/font-woff"
+                type: 'asset',
+                parser: { dataUrlCondition: { maxSize: 10000 } }
             },
             {
                 test: /\.(ttf|eot|svg|jpg|png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "file-loader"
+                type: 'asset/resource'
             }
         ]
     }

@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Extra Repayment Calculator
+title: Additional Bond Payment Calculator
+description: Estimate how additional payments could reduce the term and total interest cost of your home loan.
+calculator: additional-payment
+intro: Explore how paying more than the required monthly instalment may reduce your loan term and estimated interest.
 background: white
 ---
 

@@ -1,0 +1,18 @@
+- id: affordability
+  title: Bond Affordability Calculator
+  url: /affordability-calculator
+- id: repayment
+  title: Bond Repayment Calculator
+  url: /bond-calculator
+- id: transfer-cost
+  title: Property Transfer Cost Calculator
+  url: /transfer-cost-calculator
+- id: amortisation
+  title: Home Loan Amortisation Calculator
+  url: /amortisation-calculator
+- id: deposit
+  title: Home Deposit Savings Calculator
+  url: /deposit-savings-calculator
+- id: additional-payment
+  title: Additional Bond Payment Calculator
+  url: /additional-payment-calculator

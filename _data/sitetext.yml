@@ -147,33 +147,49 @@ clients:
       - title: "ABSA"
         url: https://www.absa.co.za
         logo: assets/img/clients/absa-bw.png
+        width: 45
+        height: 45
 
       - title: "FNB"
         url: https://www.fnb.co.za/
         logo: assets/img/clients/fnb-n.png
+        width: 95
+        height: 53
 
       - title: "Housing Investment Partners"
         url: https://www.hiphousing.co.za/
         logo: assets/img/clients/hip.jpg
+        width: 50
+        height: 50
       
       - title: "Investec"
         url: https://www.investec.co.za/
         logo: assets/img/clients/investec.png
+        width: 129
+        height: 25
       
       - title: "Nedbank"
         url: https://www.nedbank.co.za
         logo: assets/img/clients/nedbank-bw.png
+        width: 128
+        height: 26
       
       - title: "Rand Merchant Bank"
         url: https://www.rmb.co.za
         logo: assets/img/clients/rmb-img-n.png
+        width: 95
+        height: 39
 
       - title: "Standard Bank"
         url: https://www.standardbank.co.za/
         logo: assets/img/clients/SBSA-bw.png
+        width: 126
+        height: 25
       - title: "Sentinal Homes"
         url: https://www.sentinelhomes.co.za/
         logo: assets/img/clients/sentinal-homes.png
+        width: 120
+        height: 43
     
 team:
     title: "Contact Us"
@@ -185,6 +201,8 @@ team:
       - name: "Hayley Craig"
         role: "Co-Owner | Bond Originator"
         image: assets/img/team/Hayley Craig.png
+        width: 500
+        height: 501
         social:
           - url: tel:083 676 0912
             icon: fas fa-phone
@@ -201,6 +219,8 @@ team:
       - name: "Lara Patterson"
         role: "Co-Owner | Bond Originator"
         image: assets/img/team/Lara Patterson.png
+        width: 500
+        height: 500
         social:
           - url: tel:083 275 2856
             icon: fas fa-phone

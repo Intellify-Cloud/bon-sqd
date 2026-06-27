@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .expert {
     padding: 5rem 1rem;
     text-align: center; // Center all content
@@ -66,4 +68,3 @@
       }
     }
   }
-  

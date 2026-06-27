@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Transfer Cost Calculator
+title: Property Transfer Cost Calculator
+description: Estimate property transfer and bond registration costs with Bond Squad's free transfer cost calculator.
+calculator: transfer-cost
+intro: Estimate the transfer, registration, and related costs that may form part of purchasing a property.
 background: white
 ---
 

@@ -1,0 +1,20 @@
+@mixin font-base {
+  font-family: 'Comfortaa', cursive;
+}
+
+// Compatibility names used by the existing components.
+@mixin serif-font { @include font-base; }
+@mixin script-font { @include font-base; }
+@mixin body-font { @include font-base; }
+@mixin heading-font { @include font-base; }
+
+@mixin focus-ring($color: #00acc8) {
+  outline: 3px solid $color;
+  outline-offset: 3px;
+}
+
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}

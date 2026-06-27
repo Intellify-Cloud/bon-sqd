@@ -1,0 +1,12 @@
+<article class="col-md text-center contact-card">
+  <h2 class="section-heading text-uppercase">{{ include.contact.region }}</h2>
+  <h3>{{ include.contact.name }}</h3>
+  <p>Call: <a href="tel:{{ include.contact.phone }}">{{ include.contact.phone_display }}</a></p>
+  <p>WhatsApp: <a href="https://wa.me/{{ include.contact.phone | remove: '+' }}">Message me</a></p>
+  <p>Email: <a href="mailto:{{ include.contact.email }}?subject=Mail%20from%20Bond%20Squad%20Website">{{ include.contact.email }}</a></p>
+  <address>
+    {% for line in include.contact.address %}
+      {{ line }}{% unless forloop.last %}<br>{% endunless %}
+    {% endfor %}
+  </address>
+</article>

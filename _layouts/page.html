@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
-{% include nav.html %}
-
-{% if page.background == "grey" or page.background == "gray" %}
-<script>
-document.getElementById("page-top").className="bg-light";
-</script>
-{% endif %}
-
 <div class="container" id="pagecontainer">
+{% unless page.hide_title %}
+  <h1 class="page-title">{{ page.title }}</h1>
+{% endunless %}
+{% if page.intro %}
+  <p class="page-intro">{{ page.intro }}</p>
+{% endif %}
 {{ content }}
+{% if page.calculator %}
+  <p class="calculator-disclaimer"><small>Calculator results are estimates for general information only and do not constitute financial advice or a home loan offer.</small></p>
+  {% include related-calculators.html %}
+{% endif %}
 </div>

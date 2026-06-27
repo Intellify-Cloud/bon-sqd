@@ -1,0 +1,11 @@
+// Bootstrap 4 still uses legacy imports internally. Isolating it here keeps the
+// application architecture on Sass modules and makes the migration boundary clear.
+$primary: #00acc8;
+$spacer: 1rem;
+$border-width: 3px;
+$border-radius: 0;
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: false;
+
+@import '../../node_modules/bootstrap/scss/bootstrap';

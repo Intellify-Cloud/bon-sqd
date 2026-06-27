@@ -1,0 +1,18 @@
+- region: KwaZulu-Natal
+  name: Hayley Craig
+  phone_display: 083 676 0912
+  phone: "+27836760912"
+  email: hayley.craig@evogroup.co.za
+  address:
+    - Morningside
+    - Durban
+    - "4001"
+- region: Western Cape
+  name: Lara Patterson
+  phone_display: 083 275 2856
+  phone: "+27832752856"
+  email: lara.patterson@evogroup.co.za
+  address:
+    - Three Anchor Bay
+    - Cape Town
+    - "8005"

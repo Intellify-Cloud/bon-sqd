@@ -1,3 +1,14 @@
+@use '../abstracts' as *;
+
+.client-logo {
+  height: 100px;
+
+  img {
+    max-height: 120px;
+    margin: 0 auto;
+  }
+}
+
 .brand- {
   margin:logo 20px;
 }

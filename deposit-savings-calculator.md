@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Deposit Savings Calculator
+title: Home Deposit Savings Calculator
+description: Estimate how much to save regularly toward a property deposit with Bond Squad's deposit savings calculator.
+calculator: deposit
+intro: Plan a property deposit by estimating the regular savings needed to reach your target amount and date.
 background: white
 ---
 

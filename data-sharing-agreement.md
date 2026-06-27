@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Data Sharing
+title: Data Sharing Agreement
+description: Review the terms governing how Bond Squad shares and processes information supplied through its services.
 background: grey
 ---
 <div class="col-lg-12 text-center">

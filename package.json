@@ -4,6 +4,7 @@
   "description": "Get online. Grow online. Intellify your business to reach new heights.",
   "scripts": {
     "bundle": "webpack",
+    "test:visual": "bundle exec jekyll build --baseurl=\"\" && playwright test",
     "serve": "jekyll serve --baseurl ''",
     "trace": "jekyll serve --trace --baseurl ''"
   },
@@ -11,22 +12,19 @@
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
+    "@playwright/test": "^1.61.1",
     "bootstrap": "^4.3.1",
-    "css-loader": "^4.2.2",
-    "expose-loader": "^1.0.0",
-    "file-loader": "^6.1.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "expose-loader": "^5.0.1",
     "jquery": "^3.4.1",
-    "mini-css-extract-plugin": "^0.11.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "jquery.easing": "^1.4.1",
+    "mini-css-extract-plugin": "^2.9.2",
     "popper.js": "^1.15.0",
-    "style-loader": "^1.0.0",
-    "terser-webpack-plugin": "^4.1.0",
-    "url-loader": "^4.1.0",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^9.0.3",
-    "jquery.easing": "^1.4.1"
-  },
-  "dependencies": {}
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
 }

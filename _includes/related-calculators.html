@@ -1,0 +1,11 @@
+<aside class="related-calculators" aria-labelledby="related-calculators-title">
+  <h2 id="related-calculators-title">Other home loan calculators</h2>
+  <ul>
+    {% for calculator in site.data.calculators %}
+      {% unless calculator.id == page.calculator %}
+        <li><a href="{{ calculator.url | relative_url }}">{{ calculator.title }}</a></li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+  <p>Need help interpreting your estimate? <a href="{{ '/contact' | relative_url }}">Speak to a Bond Squad home loan expert</a>.</p>
+</aside>

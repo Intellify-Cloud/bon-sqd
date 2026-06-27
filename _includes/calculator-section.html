@@ -1,0 +1,38 @@
+{% assign calculator_group = site.data.sitetext[include.data] %}
+<section class="calculators page-section py-5{% if include.background %} {{ include.background }}{% endif %}"
+  id="{{ calculator_group.section | default: include.data }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase{% if include.light_text %} text-white{% endif %}">
+          {{ calculator_group.title }}
+        </h2>
+        {% if calculator_group.text %}
+          <p class="section-subheading text-muted{% if include.light_text %} text-white{% endif %}">
+            {{ calculator_group.text }}
+          </p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="calculators-grid">
+      {% for calculator in calculator_group.list %}
+        <article class="calculator-card">
+          <div class="calculator-icon" aria-hidden="true">
+            <i class="{{ calculator.icon | default: 'fas fa-calculator' }}"></i>
+          </div>
+          <h3 class="calculator-title">{{ calculator.title | strip_html }}</h3>
+          {% if calculator.desc %}
+            <p class="calculator-desc">{{ calculator.desc | strip_html }}</p>
+          {% endif %}
+          {% if calculator.link %}
+            <div class="calculator-footer">
+              <a href="{{ calculator.link.url | relative_url }}" class="btn btn-outline-primary btn-xl text-uppercase shadow">
+                {{ calculator.link.text }}
+              </a>
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

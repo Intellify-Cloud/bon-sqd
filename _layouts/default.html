@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 {% include head.html %}
 
-<body id="page-top">
+<body id="page-top"{% if page.background == "grey" or page.background == "gray" %} class="bg-light"{% endif %}>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  {% include nav.html %}
 
-  {{ content }}
+  <main id="main-content">
+    {{ content }}
+  </main>
 
   {% include footer.html %}
 

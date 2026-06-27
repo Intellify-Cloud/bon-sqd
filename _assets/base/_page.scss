@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 // Responsive Section Padding with Golden Ratio
 .page-section {
   padding: 5vw 8vw;
@@ -281,5 +283,99 @@ h6 {
     margin-bottom: 3em;
     text-transform: none;
     font-family: 'Comfortaa', cursive;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font-family-base;
+  -webkit-tap-highlight-color: $primary;
+}
+
+.skip-link {
+  position: fixed;
+  top: $space-3;
+  left: $space-3;
+  z-index: $z-index-nav + 1;
+  padding: $space-2 $space-3;
+  background: $white;
+  color: $color-text;
+  transform: translateY(-200%);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
+#pagecontainer {
+  padding-top: 150px;
+}
+
+@media (max-width: ($breakpoint-lg - 1px)) {
+  #pagecontainer {
+    padding-top: 100px;
+  }
+}
+
+.bg-newgray {
+  background-color: $color-surface-muted;
+}
+
+.post {
+  max-width: 750px;
+  margin-top: 150px;
+}
+
+.page-title {
+  margin-bottom: $space-4;
+  text-align: center;
+}
+
+.page-intro,
+.calculator-disclaimer,
+.related-calculators {
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-intro {
+  margin-bottom: $space-4;
+  text-align: center;
+}
+
+.related-calculators {
+  padding: $space-5 0;
+}
+
+.contact-card {
+  max-width: 500px;
+}
+
+.national-enquiries {
+  max-width: 1000px;
+}
+
+.about-tagline {
+  color: $primary;
+  font-weight: $font-weight-bold;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  @include focus-ring;
+}
+
+@include reduced-motion {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

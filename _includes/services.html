@@ -22,7 +22,7 @@
               <i class="fas fa-circle fa-stack-2x "></i>
               <i class="{{ service.icon | default: "" }} fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="card-title service-heading">{{ service.title | markdownify }}</h4>
+            <h4 class="card-title service-heading">{{ service.title | strip_html }}</h4>
             {% if service.desc %}
             <div class="text-muted">{{ service.desc | markdownify }}</div>
             {% endif %}
