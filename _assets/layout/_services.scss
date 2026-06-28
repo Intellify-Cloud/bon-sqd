@@ -19,8 +19,8 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 14px rgba($color-black, 0.16);
       }
 
       // Keep icon stack in primary teal, body text dark
@@ -39,9 +39,7 @@
   .btn {
     font-weight: $font-weight-bold;
 
-    &:active {
-      transform: scale(0.95);
-    }
+    &:active { transform: translateY(0); }
   }
 }
 

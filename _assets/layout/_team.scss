@@ -1,147 +1,135 @@
 @use '../abstracts' as *;
 
-// Modernised team / contact cards
+// Shared proportions for the team and testimonial blocks.
+#team .section-container,
+#testimonials .section-container {
+  max-width: 1000px;
+}
+
+#team .section-heading,
+#testimonials .section-heading {
+  margin-bottom: $space-2;
+}
+
+#team .section-subheading,
+#testimonials .section-subheading {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .team-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 400px));
   justify-content: center;
-  gap: 2.5rem;
+  gap: $space-5;
 }
 
 .team-member {
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   background: $white;
+  border: 1px solid rgba($color-black, 0.08);
   border-radius: 16px;
   box-shadow: $shadow-md;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-  position: relative;
-  overflow: hidden;
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba($color-black, 0.16);
+  }
 
-  max-width: 400px;
-  width: 100%;
-  border: 1px solid rgba($color-black, 0.08);
-
-
-
-  // Cover-style image taking the top 40% of the card
   img {
+    display: block;
     width: 100%;
     height: 330px;
     object-fit: cover;
     object-position: top center;
-    border-radius: 16px 16px 0 0;
     border: none;
+    border-radius: 16px 16px 0 0;
     box-shadow: none;
-    display: block;
   }
 
-  // Content area below the image
   .card-body {
-    padding: 1.5rem 1.5rem 1.75rem;
-    text-align: center;
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
+    padding: $space-4;
+    text-align: center;
   }
 
   h4 {
-    margin: 0.75rem 0 0.2rem;
-    font-size: 1.3rem;
-    font-weight: 700;
+    margin: 0 0 $space-2;
     color: $color-text;
+    font-size: 1.25rem;
+    font-weight: $font-weight-bold;
   }
 
   .role {
-    margin: 0 0 0.9rem;
+    margin: 0 0 $space-3;
+    color: $gray-700;
     font-size: 0.9rem;
-    color: $gray-600;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
 
     &::before {
-      content: '·';
-      color: $color-primary;
-      font-weight: 700;
+      content: '\00b7';
       margin-right: 0.35em;
+      color: $color-primary;
+      font-weight: $font-weight-bold;
     }
   }
 
   .social-buttons {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    margin-top: 0.25rem;
+    gap: $space-3;
+    margin-top: auto;
+    margin-bottom: 0;
     padding: 0;
     list-style: none;
+
+    .list-inline-item {
+      margin-right: 0;
+    }
 
     a {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 36px;
-      height: 36px;
-      background: rgba($color-primary, 0.1);
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba($color-primary, 0.28);
+      background: rgba($color-primary, 0.12);
       color: $color-primary;
-      border-radius: 50%;
-      font-size: 0.9rem;
-      transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+      border-radius: $radius-circle;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba($color-black, 0.08);
+      transition: background 0.2s ease, color 0.2s ease,
+        border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 
       &:hover {
+        border-color: $color-primary;
         background: $color-primary;
         color: $white;
-        transform: translateY(-2px);
+        text-decoration: none;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba($color-black, 0.16);
+      }
+
+      &:focus-visible {
+        text-decoration: none;
       }
     }
   }
 }
 
-// Overrides for testimonials section – keeps modern base, adjusts for embedded cards
-#testimonials {
-  position: relative;
-  width: 100%;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('/assets/Background.png');
-    background-repeat: repeat;
-    background-size: 250px auto;
-    opacity: 0.2;
-    z-index: -1;
-  }
-
-  .team-member {
-    // Keep the same modern base, but hide the accent stripe
-    &::after {
-      display: none;
-    }
-
-    img {
-      width: 100%;
-      height: 330px;
-      border-radius: 16px 16px 0 0;
-      border: none;
-      box-shadow: none;
-    }
-
-    h4,
-    h5 {
-      margin: 0.75rem 0 0.2rem;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: $color-text;
-    }
-
-    p {
-      font-style: italic;
-      color: $color-text;
-      margin: 0.75rem 0 0;
-      line-height: 1.6;
-    }
+@media (max-width: ($breakpoint-md - 1px)) {
+  .team-container {
+    grid-template-columns: minmax(0, 400px);
   }
 }

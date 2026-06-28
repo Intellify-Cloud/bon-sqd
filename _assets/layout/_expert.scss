@@ -51,7 +51,8 @@
   
         &:hover {
           background-color: darken($primary, 10%);
-          transform: translateY(-2px);
+          transform: translateY(-1px);
+          box-shadow: 0 5px 10px rgba($color-black, 0.18);
         }
       }
   
@@ -63,7 +64,8 @@
         &:hover {
           background-color: $primary;
           color: white; // Keep hover effect consistent
-          transform: translateY(-2px);
+          transform: translateY(-1px);
+          box-shadow: 0 5px 10px rgba($color-black, 0.18);
         }
       }
     }

@@ -45,8 +45,8 @@
     height: 100%;
     
     &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba($color-black, 0.16);
     }
   }
   
