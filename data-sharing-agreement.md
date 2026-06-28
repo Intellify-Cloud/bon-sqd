@@ -4,12 +4,7 @@ title: Data Sharing Agreement
 description: Review the terms governing how Bond Squad shares and processes information supplied through its services.
 background: grey
 ---
-<div class="col-lg-12 text-center">
-	<h2 class="section-heading text-uppercase">Our Data Sharing Agreement</h2>
-</div>
-
-
-#### Definitions
+## Definitions
 
 **We, us and our**; refers to {{ site.company }}, a private company with limited liability registered under the company laws of the Republic of South Africa. The principal place of business is {{ site.address }}.
 
@@ -21,12 +16,12 @@ background: grey
 
 **Processing of information** means the automated or manual activity of collecting, recording, organising, storing, updating, sharing, distributing and removing or deleting personal information. 
 
-#### Purpose of this Data Sharing Agreement 
+## Purpose of this Data Sharing Agreement
 The purpose of this Data Sharing Agreement, as read with our Privacy Statement, is to set out how {{ site.company }} collects, uses, shares and otherwise processes all 3rd Party personal information, in line with the Protection of Personal Information Act (“POPIA”).  This Data Sharing Agreement will be effective from 1 July 2021.
 
 After contacting any 3rd Party, {{ site.company }} will only further process personal information of the 3rd Party in terms of a specific mandate with the 3rd Party, should the 3rd Party enter into such a mandate with {{ site.company }}.  Any such mandate will be subject to the {{ site.company }} Privacy Statement.  Should the 3rd Party not conclude a mandate with {{ site.company }}, then {{ site.company }} will not retain any personal information of the 3rd Party unless required by law.
 
-#### {{ site.company }} commitment to privacy and POPIA compliance 
+## {{ site.company }} commitment to privacy and POPIA compliance
 {{ site.company }} is committed to protecting all data subjects right to privacy. 
 
 As our valued Business Partner, we want you to have the assurance that when you engage with {{ site.company }}, you can trust that any 3rd Party’s personal information shared with us will be treated subject to the {{ site.company }} Privacy Policy (a copy of which can be found on {{ site.url }}), as well as the requirements of POPIA.  
@@ -40,10 +35,10 @@ We will take all reasonable steps to keep all 3rd Party personal information saf
 
 Should you receive any complaints from a 3rd Party in regard to any personal information shared with us, you will notify us as soon as reasonably possible so that we can address the complaint.  You can do so by emailing {{ site.email }} or by otherwise making contact with us.
 
-#### Binding nature of this Data Sharing Agreement 
+## Binding nature of this Data Sharing Agreement
 Should you share a 3rd Party’s personal information with any member of {{ site.company }}, then {{ site.company }} will comply with the terms of this Data Sharing Agreement and {{ site.company }} Privacy Policy.  This undertaking is given in your favour and in favour of the 3rd Party.  The 3rd Party may rely on the undertakings given by us in terms of the {{ site.company }} Privacy Policy.  
 
-#### Acceptance is voluntary 
+## Acceptance is voluntary
 Any 3rd Party has the right to object to the processing of his or her personal information. It is voluntary for the 3rd Party to accept the terms and conditions of the {{ site.company }} Privacy Policy. A 3rd Party may withdraw their consent at any time.
 
 Purpose for processing a 3rd Party’s personal information 
@@ -57,21 +52,21 @@ We undertake in favour of our Business Partner (and the 3rd Parties) that we wil
 
 We will ensure that any such third-party provider has agreed to keep the information confidential and that same can only be used for a specific agreed purpose. 
 
-#### Privacy Preferences
+## Privacy Preferences
 We will not use 3rd Party personal information for a different purpose than the one stated when you provided the data to us. A 3rd Party may opt out of communications about updated information, new services and marketing messages at any time.
 
-#### We keep personal information confidential 
+## We keep personal information confidential
 We will keep the 3rd Party personal information confidential, notwithstanding the source it is collected from, i.e. from our Business Partner, the 3rd Party or any other source.
 
-#### Sharing of personal information 
+## Sharing of personal information
 If a third party asks us for any of 3rd Party personal information, we will share it with them only if: 
 1. The 3rd Party has given consent for the disclosure of this information to that third party for the provision of the evo Group, for example financial institutions, lenders, insurance companies, deposit taking institutions and FICA verification agencies; 
 2. Any person or organisation that has a legal right to access the information, for example, regulators, and/or any party entitled to such information in terms of a contract with the 3rd Party. 
 
-#### Sharing for research and improvement purposes 
+## Sharing for research and improvement purposes
 While {{ site.company }} may share and combine all 3rd Party personal information for market, statistical and academic research purposes, in such cases the personal information will be de-identified.
 
-#### Direct Electronic Marketing and opting out 
+## Direct Electronic Marketing and opting out
 {{ site.company }} will not use information provided by a Business Partner for Direct Electronic Marketing unless it has obtained the 3rd Party’s consent to that.  Additionally, {{ site.company }} will always permit a 3rd Party to opt out of any communications from {{ site.company }}.
 
 3rd Parties have the right to know what personal information we have 
@@ -85,10 +80,10 @@ The following are examples of laws that require us to collect and keep personal 
  * Long-term Insurance Act (LTIA). 
  * Financial Sector Regulation Act (FSRA)
 
-#### Transferring personal information outside South Africa 
+## Transferring personal information outside South Africa
 We will take reasonable steps to ensure that any country, company or person that to which we pass personal information (for example, for the use of cloud services) agrees or is obliged by law in that jurisdiction to treat personal information with the same level of protection as required by the laws of South Africa.
 
-#### Changing this Data Sharing Agreement 
+## Changing this Data Sharing Agreement
 We may change this Data Sharing Agreement at any time. The most updated version will always be available on {{ site.url }} and will be effective only from publication on our website.
 
 

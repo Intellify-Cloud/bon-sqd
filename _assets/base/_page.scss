@@ -135,7 +135,7 @@ img::selection {
 .afford-calc {
   width: 100%;
   height: auto;
-  min-height: 60vh;
+  min-height: 105vh;
   max-height: unset; /* Unset the max-height */
 }
 
@@ -346,8 +346,7 @@ body {
 }
 
 .page-intro,
-.calculator-disclaimer,
-.related-calculators {
+.calculator-disclaimer {
   max-width: 750px;
   margin-right: auto;
   margin-left: auto;
@@ -359,6 +358,9 @@ body {
 }
 
 .related-calculators {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: $space-5;
   margin-bottom: $space-5;
   padding: $space-5;
@@ -376,6 +378,19 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: $space-2 $space-4;
     padding-left: $space-4;
+  }
+
+  &__contact {
+    margin-top: $space-4;
+    text-align: center;
+
+    p {
+      margin-bottom: $space-2;
+    }
+
+    .btn {
+      margin-top: 0;
+    }
   }
 }
 
